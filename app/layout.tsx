@@ -55,11 +55,11 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 
 export const metadata: Metadata = {
-  title: "R.S Poddar Charitable Trust - Serving Humanity with Dignity since 2020",
+  title: "R S Poddar Charitable Trust - Serving Humanity with Dignity since 2020",
   description:
-    "Free funeral van service (dead body transportation) and rent-free medical equipment in Jaipur, Rajasthan. 24/7 free funeral service, medical equipment rental, home care equipment. R.S. Poddar Charitable Trust serving families since 2020.",
+    "Free funeral van service (dead body transportation) and rent-free medical equipment in Jaipur, Rajasthan. 24/7 free funeral service, medical equipment rental, home care equipment. R S Poddar Charitable Trust serving families since 2020.",
   keywords:
-    "free funeral van service, dead body transportation, rent-free medical equipment, medical equipment rental, home care equipment, funeral service Jaipur, free funeral service, Swarg Rath, charitable trust Jaipur, R.S. Poddar Charitable Trust",
+    "free funeral van service, dead body transportation, rent-free medical equipment, medical equipment rental, home care equipment, funeral service Jaipur, free funeral service, Swarg Rath, charitable trust Jaipur, R S Poddar Charitable Trust",
   generator: "v0.app",
 };
 

@@ -34,7 +34,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Free Funeral Van Service & Rent-Free Medical Equipment
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-200">R.S Poddar Charitable Trust</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-200">R S Poddar Charitable Trust</h2>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Standing Beside You in Illness, Crisis, and Loss.
           </p>
@@ -92,7 +92,7 @@ export default function Home() {
 
             {/* Paragraphs */}
             <p className="text-justify">
-              Since 2020, R.S. Poddar Charitable Trust has been helping families in Jaipur by offering{" "}
+              Since 2020, R S Poddar Charitable Trust has been helping families in Jaipur by offering{" "}
               <strong>Free Funeral Van Service in Jaipur</strong>, reliable <strong>Dead Body Transportation (Swarg Rath)</strong>{" "}
               Services and clean, safe, <strong>Rent-Free Medical Equipment in Jaipur, for Home Care.</strong>
             </p>
@@ -415,7 +415,7 @@ export default function Home() {
               <div>
                 <Image
                   src="/RSPODDARWHITE.png"
-                  alt="R.S. Poddar Charitable Trust"
+                  alt="R S Poddar Charitable Trust"
                   width={300}
                   height={80}
                   className="mb-1"
@@ -432,7 +432,7 @@ export default function Home() {
           </div>
           <div className=" text-center">
             <p className="text-gray-400 text-sm">
-              Copyright © 2025 R.S. Poddar Charitable Trust. All Rights Reserved. | <Link
+              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
                 href="/privacy-policy"
                 className="text-gray-400  hover:text-[#d4cee0] transition-colors"
               >

@@ -101,7 +101,7 @@ const medicalEquipment = [
     image: "/water-bed.png",
   },
   {
-    name: "Crutches",
+    name: "crutches",
     description: "Specialized water-filled mattress designed to prevent bedsores and improve patient comfort during long-term care.",
     slug: "Crutches",
     image: "/crutches.png",
@@ -315,7 +315,7 @@ export default function MedicalEquipmentService() {
           </div>
           <div className=" text-center">
             <p className="text-gray-400 text-sm">
-              Copyright © 2025 R.S. Poddar Charitable Trust. All Rights Reserved. | <Link
+              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
                 href="/privacy-policy"
                 className="text-gray-400  hover:text-[#d4cee0] transition-colors"
               >

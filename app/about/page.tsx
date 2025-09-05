@@ -9,7 +9,7 @@ export default function AboutPage() {
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About R.S Poddar Charitable Trust</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">About R S Poddar Charitable Trust</h1>
             <p className="text-xl opacity-90">Serving humanity with dignity since 2020</p>
           </div>
         </div>
@@ -21,7 +21,7 @@ export default function AboutPage() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            R.S. Poddar Charitable Trust is dedicated to serving humanity by providing essential services during the
+            R S Poddar Charitable Trust is dedicated to serving humanity by providing essential services during the
             most challenging times in people's lives. We believe that compassion and dignity should never be compromised
             due to financial constraints.
           </p>
@@ -64,7 +64,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-6 text-justify">
-              Founded in 2020, R.S. Poddar Charitable Trust emerged from a simple yet powerful vision: to ensure that no
+              Founded in 2020, R S Poddar Charitable Trust emerged from a simple yet powerful vision: to ensure that no
               family in Jaipur faces additional hardship during their most difficult moments due to financial
               constraints.
             </p>
@@ -158,7 +158,7 @@ export default function AboutPage() {
               <div>
                 <Image
                   src="/RSPODDARWHITE.png"
-                  alt="R.S. Poddar Charitable Trust"
+                  alt="R S Poddar Charitable Trust"
                   width={300}
                   height={80}
                   className="mb-1"
@@ -175,7 +175,7 @@ export default function AboutPage() {
           </div>
           <div className=" text-center">
             <p className="text-gray-400 text-sm">
-              Copyright © 2025 R.S. Poddar Charitable Trust. All Rights Reserved. | <Link
+              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
                 href="/privacy-policy"
                 className="text-gray-400  hover:text-[#d4cee0] transition-colors"
               >

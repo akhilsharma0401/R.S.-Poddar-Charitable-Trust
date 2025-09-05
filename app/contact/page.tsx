@@ -212,7 +212,7 @@ export default function ContactPage() {
           </div>
           <div className=" text-center">
             <p className="text-gray-400 text-sm">
-              Copyright © 2025 R.S. Poddar Charitable Trust. All Rights Reserved. | <Link
+              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
                 href="/privacy-policy"
                 className="text-gray-400  hover:text-[#d4cee0] transition-colors"
               >

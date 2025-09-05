@@ -771,8 +771,8 @@ export default function EquipmentDetailPage({ params }: PageProps) {
                   <div className="text-yellow-700 text-sm [&>p]:relative [&>p]:pl-4 [&>p]:mb-1
                       [&>p]:before:content-['•'] [&>p]:before:absolute
                       [&>p]:before:left-0 [&>p]:before:top-0">
-                    <p><strong>please consult with your healthcare provider before using any medical equipment.</strong></p>
-                    <p><strong>refundable security deposit Will Be applicable.</strong></p>
+                    <p><strong>Please consult with your healthcare provider before using any medical equipment.</strong></p>
+                    <p><strong>Refundable security deposit will be applicable.</strong></p>
                   </div>
                 </div>
               </div>
@@ -858,7 +858,7 @@ export default function EquipmentDetailPage({ params }: PageProps) {
           </div>
           <div className=" text-center">
             <p className="text-gray-400 text-sm">
-              Copyright © 2025 R.S. Poddar Charitable Trust. All Rights Reserved. | <Link
+              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
                 href="/privacy-policy"
                 className="text-gray-400  hover:text-[#d4cee0] transition-colors"
               >
