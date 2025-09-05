@@ -1,4 +1,5 @@
 import { ArrowLeft, CheckCircle, Phone, Heart, Clock, AlertCircle } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
@@ -31,6 +32,10 @@ const equipmentData = {
       "Use only distilled water in the humidifier bottle",
       "Follow prescribed flow rate settings",
       "Contact us immediately if alarms sound",
+      "COPD patients",
+      "Post-COVID recovery",
+      "Respiratory therapy",
+      "Home oxygen therapy",
     ],
     idealFor: ["COPD patients", "Post-COVID recovery", "Respiratory therapy", "Home oxygen therapy"],
   },
@@ -94,7 +99,7 @@ const equipmentData = {
       "Check wheel locks are engaged when stationary",
       "Report any mechanical issues immediately",
     ],
-    idealFor: ["Bedridden patients", "Post-surgery recovery", "Elderly care", "Long-term patient care"],
+    idealFor: ["Bedridden patients", "Post-surgery recovery", "Elderly care", "Long-term patient care","Patients with spinal cord injuries","Patients suffering from paralysis","ICU and critical care patients","Orthopedic or trauma recovery cases"],
   },
   wheelchair: {
     name: "Wheelchair",
@@ -125,7 +130,7 @@ const equipmentData = {
       "Regular cleaning and maintenance",
       "Check tire pressure periodically",
     ],
-    idealFor: ["Mobility impaired patients", "Post-surgery recovery", "Elderly assistance", "Temporary mobility needs"],
+    idealFor: ["Mobility impaired patients", "Post-surgery recovery", "Elderly assistance", "Temporary mobility needs","Patients with fractures, leg injuries, or joint problems","Rehabilitation therapy and recovery programs","Palliative and critical care patients","Community healthcare & transport within hospitals"],
   },
   nebulizer: {
     name: "Nebulizer",
@@ -156,7 +161,7 @@ const equipmentData = {
       "Breathe normally through the mouthpiece",
       "Complete full medication dose",
     ],
-    idealFor: ["Asthma patients", "COPD treatment", "Respiratory infections", "Pediatric respiratory care"],
+    idealFor: ["Asthma patients", "COPD treatment", "Respiratory infections", "Pediatric respiratory care","Respiratory infections","Pediatric respiratory care","Elderly patients with breathing difficulties","Patients with chronic bronchitis"],
   },
   walker: {
     name: "Walker",
@@ -187,7 +192,7 @@ const equipmentData = {
       "Check rubber tips for wear regularly",
       "Use on level surfaces only",
     ],
-    idealFor: ["Balance assistance", "Post-surgery recovery", "Elderly mobility support", "Rehabilitation therapy"],
+    idealFor: ["Balance assistance", "Post-surgery recovery", "Elderly mobility support", "Rehabilitation therapy","Rehabilitation therapy","Patients with neurological conditions (Parkinson’s, stroke recovery)","Individuals with arthritis or joint stiffness","Patients with muscle weakness or partial paralysis"],
   },
   "pulse-oximeter": {
     name: "Pulse Oximeter",
@@ -218,10 +223,10 @@ const equipmentData = {
       "Replace batteries when indicator shows low",
       "Store in protective case",
     ],
-    idealFor: ["Home health monitoring", "COVID-19 recovery", "Respiratory condition monitoring", "Fitness tracking"],
+    idealFor: ["Home health monitoring", "COVID-19 recovery", "Respiratory condition monitoring", "Fitness tracking","Post-surgical recovery monitoring","Elderly care and routine health checks","ICU and emergency patient monitoring","Travel health monitoring (high altitude use)"],
   },
   "suction-machine": {
-    name: "Suction Machine",
+    name: "Phlegm Suction Machine",
     description: "Medical suction devices for airway clearance",
     fullDescription:
       "Our medical suction machines help clear airways by removing secretions, blood, or other fluids from the respiratory tract. Essential for patients who cannot clear their airways naturally.",
@@ -254,6 +259,9 @@ const equipmentData = {
       "Post-operative care",
       "Respiratory secretion management",
       "Emergency airway clearance",
+      "ICU and critical care units",
+      "Patients with chronic respiratory conditions (COPD, ALS, etc.)",
+      "Home care for bedridden patients",
     ],
   },
   "air-bed": {
@@ -347,7 +355,7 @@ const equipmentData = {
       "Keep cane close to body",
       "Use on level surfaces",
     ],
-    idealFor: ["Mild balance issues", "Post-injury recovery", "Elderly support", "Temporary mobility aid"],
+    idealFor: ["Mild balance issues", "Post-injury recovery", "Elderly support", "Temporary mobility aid","Individuals with partial paralysis or weakness","Post-surgical rehabilitation (hip/knee replacement)","Patients with neurological conditions (Parkinson’s, stroke recovery)","Long-term mobility assistance at home or outdoors"],
   },
   "drip-stand": {
     name: "Drip Stand",
@@ -378,7 +386,7 @@ const equipmentData = {
       "Clean with disinfectant regularly",
       "Check for stability before use",
     ],
-    idealFor: ["IV therapy at home", "Medical treatments", "Hospital discharge care", "Medication administration"],
+    idealFor: ["IV therapy at home", "Medical treatments", "Hospital discharge care", "Medication administration","Dialysis centers","Emergency rooms & ICUs","Post-surgical recovery wards","Nursing homes & elderly care facilities"],
   },
   "orthopedic-belt": {
     name: "Orthopedic Belt",
@@ -448,71 +456,143 @@ const equipmentData = {
     fullDescription:
       "Our patient monitors provide accurate, real-time tracking of critical vital signs including ECG (3/5-lead), oxygen saturation (SpO₂), non-invasive blood pressure (NIBP), temperature, and pulse rate. Designed for hospitals, ICUs, emergency care, and home monitoring, these devices ensure continuous patient safety and timely medical response.",
     features: [
-       "Real-time monitoring of ECG, SpO₂, NIBP, Temp, Pulse",
-    "7-inch high-resolution TFT LCD",
-    "Configurable alarms with audio/visual alerts",
-    "Battery backup up to 4 hours",
-    "48-hour trend data storage",
-    "USB / LAN / optional Wi-Fi connectivity",
-    "Portable and durable ABS body",
+      "Real-time monitoring of ECG, SpO₂, NIBP, Temp, Pulse",
+      "7-inch high-resolution TFT LCD",
+      "Configurable alarms with audio/visual alerts",
+      "Battery backup up to 4 hours",
+      "48-hour trend data storage",
+      "USB / LAN / optional Wi-Fi connectivity",
+      "Portable and durable ABS body",
     ],
     specifications: {
-       "ECG": "3/5-lead monitoring",
-    "SpO₂": "Pulse oximetry with plethysmograph",
-    "NIBP": "Automatic cuff inflation",
-    "Temperature": "Dual probe support",
-    "Display": "7-inch TFT LCD",
-    "Battery": "Up to 4 hours",
-    "Weight": "3.5 kg"
+      "ECG": "3/5-lead monitoring",
+      "SpO₂": "Pulse oximetry with plethysmograph",
+      "NIBP": "Automatic cuff inflation",
+      "Temperature": "Dual probe support",
+      "Display": "7-inch TFT LCD",
+      "Battery": "Up to 4 hours",
+      "Weight": "3.5 kg"
     },
     usageInstructions: [
       "Place monitor on stable surface near patient",
-    "Attach ECG leads, SpO₂ probe, and NIBP cuff",
-    "Turn on and verify readings",
-    "Set alarm thresholds for safety",
-    "Calibrate and maintain sensors regularly",
-    "Clean probes and cuffs after use",
+      "Attach ECG leads, SpO₂ probe, and NIBP cuff",
+      "Turn on and verify readings",
+      "Set alarm thresholds for safety",
+      "Calibrate and maintain sensors regularly",
+      "Clean probes and cuffs after use",
     ],
-    idealFor: [ "ICU and hospital patients",
-    "Emergency medical care",
-    "Post-surgery monitoring",
-    "Chronic illness management",
-    "Home-care monitoring"],
+    idealFor: ["ICU and hospital patients",
+      "Emergency medical care",
+      "Post-surgery monitoring",
+      "Chronic illness management",
+      "Home-care monitoring"],
   },
   "bipap-machine": {
-    name: "BiPAP Machine",
+    name: "BiPAP/CPAP Machine",
     description: "Compact BiPAP device for non-invasive breathing support.",
     fullDescription:
       "BiPAP machines deliver two air pressure levels—higher during inhalation (IPAP) and lower during exhalation (EPAP)—to make breathing easier. They help manage sleep apnea, COPD, and other respiratory conditions by maintaining oxygen levels and reducing carbon dioxide buildup.",
     features: [
-       "Dual pressure settings (IPAP & EPAP)",
-    "Digital display for airflow monitoring",
-    "Adjustable therapy modes",
-    "Optional humidifier for comfort",
-    "Quiet operation",
-    "Portable and easy to set up",
-    "Built-in safety alarms",
+      "Dual pressure settings (IPAP & EPAP)",
+      "Digital display for airflow monitoring",
+      "Adjustable therapy modes",
+      "Optional humidifier for comfort",
+      "Quiet operation",
+      "Portable and easy to set up",
+      "Built-in safety alarms",
     ],
     specifications: {
-       "Modes": "BiPAP with optional ST",
-    "Pressure": " 4–30 cmH₂O",
-    "Display": "Digital LCD",
-    "Humidifier": "Optional integrated unit",
-    "Power": "AC with backup option",
-    "Weight": "1.5–2.5 kg",
+      "Modes": "BiPAP with optional ST",
+      "Pressure": " 4–30 cmH₂O",
+      "Display": "Digital LCD",
+      "Humidifier": "Optional integrated unit",
+      "Power": "AC with backup option",
+      "Weight": "1.5–2.5 kg",
     },
     usageInstructions: [
       "Place on stable surface near bed",
-    "Connect tubing and mask securely",
-    "Power on and adjust settings as prescribed",
-    "Use humidifier with distilled water if enabled",
-    "Check comfort and straps during use",
-    "Clean mask and tubing regularly",
+      "Connect tubing and mask securely",
+      "Power on and adjust settings as prescribed",
+      "Use humidifier with distilled water if enabled",
+      "Check comfort and straps during use",
+      "Clean mask and tubing regularly",
     ],
-    idealFor: [ "Sleep apnea patients",
-    "COPD and chronic respiratory care",
-    "Post-surgery recovery",
-    "Home or hospital non-invasive ventilation",
+    idealFor: ["Sleep apnea patients",
+      "COPD and chronic respiratory care",
+      "Post-surgery recovery",
+      "Home or hospital non-invasive ventilation",
+    ]
+  },
+  "water-bed": {
+    name: "Water Bed",
+    description: "Specialized water-filled mattress designed to prevent bedsores and improve patient comfort during long-term care.",
+    fullDescription:
+      "Hospital water beds are designed to reduce pressure points and improve circulation in bedridden patients. They help prevent bedsores, promote comfort, and ensure better care during extended hospital stays.",
+    features: [
+      "Even weight distribution to prevent pressure sores",
+      "Adjustable water level for customized comfort",
+      "Durable, puncture-resistant materia",
+      "Easy-to-clean waterproof surface",
+      "Provides cooling relief for patients",
+     
+    ],
+    specifications: {
+      "Bed Length": "200 cm",
+      "Bed Width": "90cm",
+      "Material": "High-quality PVC with leak-proof design",
+      "Capacity": "Suitable for patients up to 150 kg",
+      "Design": " Single- or three-chamber water system",
+    },
+    usageInstructions: [
+      "Place the bed on a flat, stable surface before filling",
+      "Fill with clean water and adjust level as required",
+      "Ensure no sharp objects come in contact with the bed",
+      "Regularly check for leaks and maintain water level",
+      "Disinfect surface as per hospital hygiene guidelines",
+    ],
+    idealFor: ["Bedridden patients (short-term & long-term)",
+      "Post-surgery recovery cases",
+      "Patients with spinal cord injuries",
+      "Patients suffering from paralysis",
+      "Elderly care & geriatric patients",
+      "ICU and critical care patients",
+      "Patients with severe burns or skin grafts",
+      "Individuals at high risk of bedsores/pressure ulcers",
+      "Long-term hospital or home care",
+    ]
+  },
+  "crutches": {
+    name: "Crutches",
+    description: "Supportive walking aids designed to help patients maintain balance, reduce weight-bearing, and improve mobility during recovery.",
+    fullDescription:
+      "Crutches are essential mobility aids for patients with temporary or permanent lower-limb injuries or disabilities. They provide stability, reduce pressure on the legs, and allow safe movement while promoting recovery.",
+    features: [
+      "Lightweight and durable aluminum or steel construction",
+      "Adjustable height for patient comfort",
+      "Ergonomic hand grips and padded underarms for support",
+      "Anti-slip rubber tips for added safety",
+      "Easy to carry and use indoors or outdoors",
+     
+    ],
+    specifications: {
+      "Height Adjustment": "110–150 cm (varies by model)",
+      "Weight Capacity": "Up to 120 kg",
+      "Material": "Aluminum/Steel with rubber padding",
+      "Grip Type": "Cushioned hand grips for comfort",
+      "Design": " Underarm or elbow (forearm) style available",
+    },
+    usageInstructions: [
+      "Adjust crutches to the correct height before use",
+      "Place rubber tips firmly on the ground while walking",
+      "Keep weight on hands, not underarms, to avoid nerve strain",
+      "Move crutches slightly ahead, then step forward with injured leg",
+      "Inspect regularly for wear and replace worn-out tips",
+    ],
+    idealFor: ["Patients with fractures, sprains, or leg injuries",
+      "Post-surgery rehabilitation (orthopedic or joint surgeries)",
+      "Individuals with temporary mobility loss",
+      "Patients with long-term lower-limb disabilities",
+      "Elderly patients needing additional balance support",
     ]
   },
 }
@@ -649,12 +729,12 @@ export default function EquipmentDetailPage({ params }: PageProps) {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Request This Equipment</h3>
               <p className="text-gray-600 mb-6">This equipment is available free of charge for those in need.</p>
               <div className="space-y-4">
-                <Link
-                  href="/contact"
+                <a
+                  href="tel:+919251412412"
                   className="block w-full bg-[#db4637] text-white text-center py-3 rounded-lg hover:bg-[#c23e2f] transition-colors font-semibold"
                 >
                   Request Now
-                </Link>
+                </a>
                 <div className="flex items-center gap-2 text-gray-600">
                   <Phone className="w-4 h-4" />
                   <span className="text-sm">Call: +91 9251412412</span>
@@ -687,13 +767,17 @@ export default function EquipmentDetailPage({ params }: PageProps) {
                 <AlertCircle className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-yellow-800 mb-2">Important Notice</h3>
-                  <p className="text-yellow-700 text-sm">
-                    <strong>Please consult with your healthcare provider before using any medical equipment.</strong><br />
-                    <strong>Refundable Security deposit Will Be Applicable. </strong> 
-                  </p>
+
+                  <div className="text-yellow-700 text-sm [&>p]:relative [&>p]:pl-4 [&>p]:mb-1
+                      [&>p]:before:content-['•'] [&>p]:before:absolute
+                      [&>p]:before:left-0 [&>p]:before:top-0">
+                    <p><strong>please consult with your healthcare provider before using any medical equipment.</strong></p>
+                    <p><strong>refundable security deposit Will Be applicable.</strong></p>
+                  </div>
                 </div>
               </div>
             </div>
+
 
             {/* Contact Info */}
             <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white rounded-lg p-6">
@@ -712,9 +796,92 @@ export default function EquipmentDetailPage({ params }: PageProps) {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+       <footer className="bg-gray-900 text-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+              <div className="space-y-2">
+                <Link href="/" className="block hover:text-[#db4637] transition-colors">
+                  Home
+                </Link>
+                <Link href="/about" className="block hover:text-[#db4637] transition-colors">
+                  About Us
+                </Link>
+                <Link href="/services/funeral-van" className="block hover:text-[#db4637] transition-colors">
+                  Funeral Van Service
+                </Link>
+                <Link href="/services/medical-equipment" className="block hover:text-[#db4637] transition-colors">
+                  Medical Equipment
+                </Link>
+                <Link href="/contact" className="block hover:text-[#db4637] transition-colors">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">Our Services</h3>
+              <div className="space-y-2">
+                <p className="text-gray-300">Funeral Van Service (Swarg Rath)</p>
+                {/* <p className="text-gray-300">Dead Body Transportation - 24/7</p> */}
+                <p className="text-gray-300">Rent-Free Medical Equipment</p>
+                <p className="text-gray-300">Rent Free Home Care Equipment</p>
+                <p className="text-gray-300">24/7 Emergency Support</p>
+                <p className="text-gray-300">Community Healthcare Services</p>
+              </div>
+            </div>
+            <div>
+              {/* <h3 className="text-xl font-bold mb-4">R.S. Poddar Charitable Trust</h3> */}
+              <div>
+                <Image
+                  src="/RSPODDARWHITE.png"
+                  alt="R.S. Poddar Charitable Trust"
+                  width={300}
+                  height={80}
+                  className="mb-1"
+                />
+              </div>
+              <p className="text-gray-300 mb-4 ml-2">
+                Standing Beside You in Illness, Crisis, and Loss.
+              </p>
+              {/* <div className="flex items-center gap-2">
+                <Heart className="h-5 w-5 text-[#db4637]" />
+                <span className="text-sm">Compassionate services for every family in need</span>
+              </div> */}
+            </div>
+          </div>
+          <div className=" text-center">
+            <p className="text-gray-400 text-sm">
+              Copyright © 2025 R.S. Poddar Charitable Trust. All Rights Reserved. | <Link
+                href="/privacy-policy"
+                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
+              >
+                Privacy Policy
+              </Link> |{" "}
+              <Link
+                href="/terms-and-conditions"
+                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
+              >
+                Terms and Conditions
+              </Link>
+            </p>
+          </div>
+          <div className="border-t border-gray-700 pt-4 text-center mt-4">
+            <h2 className="mb-2">Disclaimer</h2>
+            <p className="text-gray-400 text-sm text-justify">
+              All rent-free medical equipment provided by R. S. Poddar Charitable Trust are intended solely for temporary use and convenience. Please consult with a licensed doctor or healthcare provider before using any equipment to ensure it is appropriate for your individual medical needs. We do not provide medical advice, diagnosis or treatment and we assume no liability for any misuse, injury or adverse outcome resulting from the use of the equipment. <br />
+              A refundable security deposit will be applicable and returned upon proper and timely return of the equipment in good condition. By accepting and using the equipment, you agree to assume full responsibility for its safe and appropriate use.
+            </p>
+
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

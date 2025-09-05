@@ -121,3 +121,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important; /* white */
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #db4637 !important; /* your brand red */
+  opacity: 1;
+}
