@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Heart, Phone, Mail, MapPin, Truck, Stethoscope, ArrowRight, Clock, CheckCircle } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import Footer from "@/components/footer"
 
 export default function Home() {
   const medicalEquipment = [
@@ -31,10 +32,12 @@ export default function Home() {
           <div className="flex justify-center mb-6">
             <Heart className="h-16 w-16 text-white" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Free Funeral Van Service & Rent-Free Medical Equipment
+          <h1 className="text-3xl md:text-4xl font-bold mb-6">
+            Rent-Free Dead Body Transportation Service & Rent-Free Medical Equipment
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-200">R S Poddar Charitable Trust</h2>
+
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-200">(स्वर्ग रथ – निःशुल्क शव यात्रा सेवा | निःशुल्क चिकित्सीय उपकरण)</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-200">R. S. Poddar Charitable Trust</h2>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Standing Beside You in Illness, Crisis, and Loss.
           </p>
@@ -59,46 +62,27 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-4 bg-white">
+      {/* <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
             Serving Humanity with Dignity, Compassion & Care
             Jaipur
           </h2>
-          {/* <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-            <p className="text-xl font-semibold text-[#db4637] text-center mb-8">
-              Dead Body Transportation & Medical Equipment Rental in Jaipur, Rajasthan
-            </p>
-            <p>
-              Since 2020, <em>R.S. Poddar Charitable Trust</em> has been helping families in Jaipur by offering{" "}
-              <strong>Free Funeral Van Service in Jaipur</strong>, reliable <strong>Dead Body Transportation (Swarg Rath)</strong>{" "}
-              Services and clean, safe, <strong>Rent-Free Medical Equipment in Jaipur, for Home Care.</strong>
-            </p>
-            <p>
-              We provide essential <strong>Medical Equipment Rental</strong> items like comfortable hospital beds,
-              portable oxygen cylinders, easy-to-use wheelchairs, strong walkers, and more — all at{" "}
-              <strong>Rent Free</strong>. Our <strong>Funeral Service</strong> and{" "}
-              <strong>Medical Equipment on Rent</strong> program aims to support people during difficult times by easing
-              both emotional stress and financial pressure. We are here to stand beside every family with respect,
-              comfort, and meaningful support when it matters most.
-            </p>
-          </div> */}
-
           <div className="text-lg text-gray-700 leading-relaxed space-y-6 px-4">
-            {/* Heading */}
+         
             <p className="text-xl font-semibold text-[#db4637] text-center mb-8">
-              Dead Body Transportation & Medical Equipment Rental in Jaipur, Rajasthan
+              Dead Body Transportation & Medical Equipment Rent Free in Jaipur, Rajasthan
             </p>
 
-            {/* Paragraphs */}
+            
             <p className="text-justify">
-              Since 2020, R S Poddar Charitable Trust has been helping families in Jaipur by offering{" "}
+              Since 2020, R. S. Poddar Charitable Trust has been helping families in Jaipur by offering{" "}
               <strong>Free Funeral Van Service in Jaipur</strong>, reliable <strong>Dead Body Transportation (Swarg Rath)</strong>{" "}
               Services and clean, safe, <strong>Rent-Free Medical Equipment in Jaipur, for Home Care.</strong>
             </p>
 
             <p className="text-justify">
-              We provide essential <strong>Medical Equipment Rental</strong> items like comfortable hospital beds,
+              We provide essential <strong>Medical Equipment </strong> items like comfortable hospital beds,
               portable oxygen cylinders, easy-to-use wheelchairs, strong walkers, and more — all at{" "}
               <strong>Rent Free</strong>. Our <strong>Funeral Service</strong> and{" "}
               <strong>Medical Equipment on Rent</strong> program aims to support people during difficult times by easing
@@ -116,7 +100,81 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section> */}
+
+      <section className="relative isolate overflow-hidden bg-gray-50 py-14 sm:py-16 lg:py-20">
+        {/* Soft background */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white to-gray-100" />
+
+        {/* Decorative blobs (scaled for small screens) */}
+        <div className="pointer-events-none absolute -top-24 -left-24 w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full bg-[#db4637]/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -right-24 w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full bg-[#3f4787]/10 blur-3xl" />
+
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          {/* Heading */}
+          <h2 className="text-center font-extrabold leading-tight text-gray-900 text-[clamp(1.75rem,4.5vw,3.25rem)]">
+            Serving Humanity with{" "}
+            <span className="bg-gradient-to-r from-[#db4637] to-[#3f4787] bg-clip-text text-transparent">
+              Dignity, Compassion & Care
+            </span>
+          </h2>
+          <p className="mt-2 text-center text-[clamp(0.95rem,1.8vw,1.25rem)] text-gray-600">
+            Jaipur, Rajasthan
+          </p>
+
+          {/* Sub-heading */}
+          <p className="mt-6 text-center font-semibold text-[#db4637] text-[clamp(1.05rem,2.5vw,1.375rem)]">
+            Free Dead Body Transportation & Rent-Free Medical Equipment
+          </p>
+
+          {/* Cards */}
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
+            {/* Card 1 */}
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg transition-shadow hover:shadow-2xl">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4">
+                <div className="shrink-0 grid place-items-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#db4637]/10 text-xl sm:text-2xl">
+                  🚐
+                </div>
+                <h3 className="text-[clamp(1rem,2.4vw,1.25rem)] font-bold text-gray-900">
+                  Funeral & Transportation
+                </h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-[clamp(0.95rem,2vw,1.05rem)]">
+                Since 2020, we have provided <strong>Free Funeral Van Service (Swarg Rath)</strong> and{" "}
+                <strong>Dead Body Transportation</strong> with dignity and care for families in need.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg transition-shadow hover:shadow-2xl">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4">
+                <div className="shrink-0 grid place-items-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#3f4787]/10 text-xl sm:text-2xl">
+                  🏥
+                </div>
+                <h3 className="text-[clamp(1rem,2.4vw,1.25rem)] font-bold text-gray-900">
+                  Rent-Free Medical Equipment
+                </h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-[clamp(0.95rem,2vw,1.05rem)]">
+                We offer <strong>hospital beds</strong>, <strong>oxygen cylinders</strong>,{" "}
+                <strong>wheelchairs</strong>, <strong>walkers</strong> and more — all completely{" "}
+                <strong>Rent-Free</strong> to ease both financial and emotional burdens.
+              </p>
+            </div>
+          </div>
+
+          {/* Button */}
+          <div className="mt-10 sm:mt-12 text-center">
+            <Link href="/about">
+              <Button className="inline-flex items-center rounded-xl px-6 sm:px-8 py-3 sm:py-4 font-medium text-white shadow-md transition-all bg-gradient-to-r from-[#453066] to-[#3f4787] hover:from-[#3f4787] hover:to-[#db4637] text-[clamp(0.95rem,1.8vw,1rem)]">
+                Read Our Full Story
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
       </section>
+
 
       {/* Services Section */}
       <section className="py-16 px-4 bg-gray-50">
@@ -174,7 +232,7 @@ export default function Home() {
                     <span> Van service </span>
                   </div>
                 </div>
-                <Link href="/services/funeral-van">
+                <Link href="/funeral-van">
                   <Button className="w-full bg-[#db4637] hover:bg-[#c23e2f] text-white group-hover:shadow-lg transition-all">
                     Get Funeral Van Service
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -195,11 +253,11 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 text-justify mb-4">
-                  Essential <strong>Medical Equipment Rental</strong>  available
+                  Essential <strong>Medical Equipments</strong>  available
                   at no cost for patient care:
                 </p>
-                <div className="grid grid-cols-2 gap-2 text-sm mb-6">
-                  {medicalEquipment.slice(0, 8).map((equipment, index) => (
+                <div className="grid grid-cols-2 gap-2 text-sm mb-5">
+                  {medicalEquipment.slice(0, 10).map((equipment, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-[#453066] rounded-full"></div>
                       <span className="font-medium">{equipment}</span>
@@ -211,7 +269,7 @@ export default function Home() {
                     {/* + {medicalEquipment.length - 8}  */}
                     more medical equipment items available</strong>
                 </p>
-                <Link href="/services/medical-equipment">
+                <Link href="/medical-equipment">
                   <Button className="w-full bg-gradient-to-r from-[#453066] to-[#3f4787] text-white hover:opacity-90 group-hover:shadow-lg transition-all">
                     Get Medical Equipment
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -292,7 +350,7 @@ export default function Home() {
                   <span className="text-white text-2xl font-bold">KA</span>
                 </div>
                 <CardTitle className="text-xl">Kailash Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Trustee</CardDescription>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -301,7 +359,7 @@ export default function Home() {
                   <span className="text-white text-2xl font-bold">SA</span>
                 </div>
                 <CardTitle className="text-xl">Suresh Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Trustee</CardDescription>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
               </CardHeader>
             </Card>
           </div>
@@ -317,12 +375,12 @@ export default function Home() {
             no charge.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/services/funeral-van">
+            <Link href="/funeral-van">
               <Button size="lg" variant="secondary" className="bg-white text-[#db4637] hover:bg-gray-100">
                 Call for Funeral Van Service
               </Button>
             </Link>
-            <Link href="/services/medical-equipment">
+            <Link href="/medical-equipment">
               <Button
                 size="lg"
                 variant="outline"
@@ -347,7 +405,8 @@ export default function Home() {
                 <MapPin className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Address</h3>
-              <p className="text-gray-600 text-justify">22, Ground Floor, Biswa Nagar, New Sanganer Road, Opp. Metro Pillar No. 75, Jaipur, Rajasthan, India – 302019</p>
+              {/* <p className="text-gray-600 text-justify">22, Ground Floor, Biswa Nagar, New Sanganer Road, Opp. Metro Pillar No. 75, Jaipur, Rajasthan, India – 302019</p> */}
+              <a href="https://shorturl.at/vlqmH" className="text-gray-600">https://shorturl.at/vlqmH</a>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mb-4">
@@ -376,86 +435,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-              <div className="space-y-2">
-                <Link href="/" className="block hover:text-[#db4637] transition-colors">
-                  Home
-                </Link>
-                <Link href="/about" className="block hover:text-[#db4637] transition-colors">
-                  About Us
-                </Link>
-                <Link href="/services/funeral-van" className="block hover:text-[#db4637] transition-colors">
-                  Funeral Van Service
-                </Link>
-                <Link href="/services/medical-equipment" className="block hover:text-[#db4637] transition-colors">
-                  Medical Equipment
-                </Link>
-                <Link href="/contact" className="block hover:text-[#db4637] transition-colors">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Our Services</h3>
-              <div className="space-y-2">
-                <p className="text-gray-300">Funeral Van Service (Swarg Rath)</p>
-                {/* <p className="text-gray-300">Dead Body Transportation - 24/7</p> */}
-                <p className="text-gray-300">Rent-Free Medical Equipment</p>
-                <p className="text-gray-300">Rent Free Home Care Equipment</p>
-                <p className="text-gray-300">24/7 Emergency Support</p>
-                <p className="text-gray-300">Community Healthcare Services</p>
-              </div>
-            </div>
-            <div>
-              {/* <h3 className="text-xl font-bold mb-4">R.S. Poddar Charitable Trust</h3> */}
-              <div>
-                <Image
-                  src="/RSPODDARWHITE.png"
-                  alt="R S Poddar Charitable Trust"
-                  width={300}
-                  height={80}
-                  className="mb-1"
-                />
-              </div>
-              <p className="text-gray-300 mb-4 ml-2">
-                Standing Beside You in Illness, Crisis, and Loss.
-              </p>
-              {/* <div className="flex items-center gap-2">
-                <Heart className="h-5 w-5 text-[#db4637]" />
-                <span className="text-sm">Compassionate services for every family in need</span>
-              </div> */}
-            </div>
-          </div>
-          <div className=" text-center">
-            <p className="text-gray-400 text-sm">
-              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
-                href="/privacy-policy"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Privacy Policy
-              </Link> |{" "}
-              <Link
-                href="/terms-and-conditions"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Terms and Conditions
-              </Link>
-            </p>
-          </div>
-          <div className="border-t border-gray-700 pt-4 text-center mt-4">
-            <h2 className="mb-2">Disclaimer</h2>
-            <p className="text-gray-400 text-sm text-justify">
-              All rent-free medical equipment provided by R. S. Poddar Charitable Trust are intended solely for temporary use and convenience. Please consult with a licensed doctor or healthcare provider before using any equipment to ensure it is appropriate for your individual medical needs. We do not provide medical advice, diagnosis or treatment and we assume no liability for any misuse, injury or adverse outcome resulting from the use of the equipment. <br />
-              A refundable security deposit will be applicable and returned upon proper and timely return of the equipment in good condition. By accepting and using the equipment, you agree to assume full responsibility for its safe and appropriate use.
-            </p>
-
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 }

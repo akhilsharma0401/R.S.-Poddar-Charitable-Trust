@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { ShieldCheck, FileText, AlertTriangle, ArrowRight, Heart } from "lucide-react";
 import Image from "next/image";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Terms & Conditions | R S Poddar Charitable Trust",
@@ -214,86 +215,7 @@ const TermsPage: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-              <div className="space-y-2">
-                <Link href="/" className="block hover:text-[#db4637] transition-colors">
-                  Home
-                </Link>
-                <Link href="/about" className="block hover:text-[#db4637] transition-colors">
-                  About Us
-                </Link>
-                <Link href="/services/funeral-van" className="block hover:text-[#db4637] transition-colors">
-                  Funeral Van Service
-                </Link>
-                <Link href="/services/medical-equipment" className="block hover:text-[#db4637] transition-colors">
-                  Medical Equipment
-                </Link>
-                <Link href="/contact" className="block hover:text-[#db4637] transition-colors">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Our Services</h3>
-              <div className="space-y-2">
-                <p className="text-gray-300">Funeral Van Service (Swarg Rath)</p>
-                {/* <p className="text-gray-300">Dead Body Transportation - 24/7</p> */}
-                <p className="text-gray-300">Rent-Free Medical Equipment</p>
-                <p className="text-gray-300">Rent Free Home Care Equipment</p>
-                <p className="text-gray-300">24/7 Emergency Support</p>
-                <p className="text-gray-300">Community Healthcare Services</p>
-              </div>
-            </div>
-            <div>
-              {/* <h3 className="text-xl font-bold mb-4">R.S. Poddar Charitable Trust</h3> */}
-              <div>
-                <Image
-                  src="/RSPODDARWHITE.png"
-                  alt="R S Poddar Charitable Trust"
-                  width={300}
-                  height={80}
-                  className="mb-1"
-                />
-              </div>
-              <p className="text-gray-300 mb-4 ml-2">
-                Standing Beside You in Illness, Crisis, and Loss.
-              </p>
-              {/* <div className="flex items-center gap-2">
-                <Heart className="h-5 w-5 text-[#db4637]" />
-                <span className="text-sm">Compassionate services for every family in need</span>
-              </div> */}
-            </div>
-          </div>
-          <div className=" text-center">
-            <p className="text-gray-400 text-sm">
-              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
-                href="/privacy-policy"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Privacy Policy
-              </Link> |{" "}
-              <Link
-                href="/terms-and-conditions"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Terms and Conditions
-              </Link>
-            </p>
-          </div>
-          <div className="border-t border-gray-700 pt-4 text-center mt-4">
-            <h2 className="mb-2">Disclaimer</h2>
-            <p className="text-gray-400 text-sm text-justify">
-              All rent-free medical equipment provided by R. S. Poddar Charitable Trust are intended solely for temporary use and convenience. Please consult with a licensed doctor or healthcare provider before using any equipment to ensure it is appropriate for your individual medical needs. We do not provide medical advice, diagnosis or treatment and we assume no liability for any misuse, injury or adverse outcome resulting from the use of the equipment. <br />
-              A refundable security deposit will be applicable and returned upon proper and timely return of the equipment in good condition. By accepting and using the equipment, you agree to assume full responsibility for its safe and appropriate use.
-            </p>
-
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </main>
   );
 };

@@ -69,15 +69,21 @@ export default function Navigation() {
             </Link>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-[#db4637] transition-colors">
+            <div className="hidden md:flex items-center space-x-6">
+              <Link href="/" className="text-gray-700 font-bold hover:text-[#db4637] transition-colors">
                 Home
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-[#db4637] transition-colors">
+              <Link href="/about" className="text-gray-700 font-bold hover:text-[#db4637] transition-colors">
                 About
               </Link>
-              <div className="relative group">
-                <button className="text-gray-700 hover:text-[#db4637] transition-colors flex items-center">
+              <Link href="/funeral-van" className="text-gray-700 font-bold hover:text-[#db4637] transition-colors">
+                Funeral Van Service
+              </Link>
+              <Link href="/medical-equipment" className="text-gray-700 font-bold hover:text-[#db4637] transition-colors">
+                Medical Equipment
+              </Link>
+              {/* <div className="relative group">
+                <button className="text-gray-700 hover:text-[#db4637] font-bold transition-colors flex items-center">
                   Rent-free Services
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -87,25 +93,25 @@ export default function Navigation() {
                   <div className="py-2">
                     <Link
                       href="/services/funeral-van"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#db4637]"
+                      className="block px-4 py-2 text-gray-700 font-bold hover:bg-gray-50 hover:text-[#db4637]"
                     >
                       Funeral Van Service
                     </Link>
                     <Link
                       href="/services/medical-equipment"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#db4637]"
+                      className="block px-4 py-2 text-gray-700 font-bold hover:bg-gray-50 hover:text-[#db4637]"
                     >
                       Medical Equipment
                     </Link>
                   </div>
                 </div>
-              </div>
-              <Link href="/contact" className="text-gray-700 hover:text-[#db4637] transition-colors">
+              </div> */}
+              <Link href="/contact" className="text-gray-700 font-bold hover:text-[#db4637] transition-colors">
                 Contact
               </Link>
               <Link
                 href="/contact"
-                className="bg-[#db4637] text-white px-6 py-2 rounded-full hover:bg-[#c23e2f] transition-colors"
+                className="bg-[#db4637] text-white px-6 py-2 font-bold rounded-full hover:bg-[#c23e2f] transition-colors"
               >
                 Get Free Help
               </Link>
@@ -137,8 +143,24 @@ export default function Navigation() {
                   About
                 </Link>
 
+                <Link
+                  href="/funeral-van"
+                  className="text-gray-700 hover:text-[#db4637] transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Funeral Van Service
+                </Link>
+
+                <Link
+                  href="/medical-equipment"
+                  className="text-gray-700 hover:text-[#db4637] transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                    Medical Equipment
+                </Link>
+
                 {/* Dropdown Button */}
-                <button
+                {/* <button
                   onClick={() => setOpenServices(!openServices)}
                   className="flex items-center gap-2 text-gray-700 hover:text-[#db4637] transition-colors"
                 >
@@ -147,10 +169,10 @@ export default function Navigation() {
                     className={`w-4 h-4 transform transition-transform duration-200 ${openServices ? "rotate-180" : ""
                       }`}
                   />
-                </button>
+                </button> */}
 
                 {/* Dropdown Links */}
-                {openServices && (
+                {/* {openServices && (
                   <div className="flex flex-col space-y-2 pl-4">
                     <Link
                       href="/services/funeral-van"
@@ -167,7 +189,7 @@ export default function Navigation() {
                       Medical Equipment
                     </Link>
                   </div>
-                )}
+                )} */}
 
                 <Link
                   href="/contact"

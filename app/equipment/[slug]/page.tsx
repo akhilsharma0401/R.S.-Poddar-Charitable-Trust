@@ -1,3 +1,4 @@
+import Footer from "@/components/footer"
 import { ArrowLeft, CheckCircle, Phone, Heart, Clock, AlertCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -6,6 +7,7 @@ import { notFound } from "next/navigation"
 const equipmentData = {
   "oxygen-concentrator": {
     name: "Oxygen Concentrator",
+    hindiname: "ऑक्सीजन कंसंट्रेटर",
     description: "High-quality oxygen concentrators for respiratory support at home",
     fullDescription:
       "Our oxygen concentrators provide a reliable source of concentrated oxygen for patients with respiratory conditions. These medical-grade devices are perfect for home use and can deliver continuous oxygen therapy as prescribed by healthcare professionals.",
@@ -41,6 +43,7 @@ const equipmentData = {
   },
   "oxygen-cylinder": {
     name: "Oxygen Cylinder",
+    hindiname: "ऑक्सीजन सिलेंडर",
     description: "Medical grade oxygen cylinders with regulators for emergency and continuous use",
     fullDescription:
       "Our medical oxygen cylinders provide pure oxygen for patients requiring supplemental oxygen therapy. Each cylinder comes with a pressure regulator and flow meter for safe and controlled oxygen delivery.",
@@ -72,11 +75,12 @@ const equipmentData = {
   },
   "hospital-bed": {
     name: "Hospital Bed",
+    hindiname: " हॉस्पिटल बेड",
     description: "Adjustable hospital beds for patient comfort and care",
     fullDescription:
       "Our hospital beds are designed to provide maximum comfort and facilitate better patient care. With multiple adjustment options, these beds help patients maintain proper positioning and make caregiving easier for family members.",
     features: [
-      "Electric height adjustment",
+      // "Electric height adjustment",
       "Head and foot elevation controls",
       "Side rails for patient safety",
       "Lockable wheels for mobility",
@@ -103,6 +107,7 @@ const equipmentData = {
   },
   wheelchair: {
     name: "Wheelchair",
+    hindiname: "व्हीलचेयर",
     description: "Manual and electric wheelchairs for mobility assistance",
     fullDescription:
       "Our wheelchairs provide mobility independence for patients with temporary or permanent mobility challenges. Available in both manual and electric options to suit different needs and preferences.",
@@ -134,6 +139,7 @@ const equipmentData = {
   },
   nebulizer: {
     name: "Nebulizer",
+    hindiname: "नेबुलाइज़र",
     description: "Respiratory therapy devices for medication delivery",
     fullDescription:
       "Our nebulizers convert liquid medication into a fine mist that can be easily inhaled into the lungs. Essential for patients with asthma, COPD, and other respiratory conditions requiring inhaled medications.",
@@ -165,6 +171,7 @@ const equipmentData = {
   },
   walker: {
     name: "Walker",
+    hindiname: " वॉकर फोल्डिंग (पहियों सहित/बिना पहियों के)",
     description: "Walking aids for mobility assistance and stability",
     fullDescription:
       "Our walkers provide stable support for patients who need assistance with walking and balance. Available in various styles including standard, wheeled, and folding models to meet different mobility needs.",
@@ -196,6 +203,7 @@ const equipmentData = {
   },
   "pulse-oximeter": {
     name: "Pulse Oximeter",
+    hindiname: "पल्स ऑक्सीमीटर",
     description: "Digital devices to monitor oxygen saturation and pulse rate",
     fullDescription:
       "Our pulse oximeters provide quick and accurate measurements of blood oxygen saturation and pulse rate. Essential for monitoring patients with respiratory conditions or those recovering from illness.",
@@ -227,6 +235,7 @@ const equipmentData = {
   },
   "suction-machine": {
     name: "Phlegm Suction Machine",
+    hindiname: "बलगम सक्शन मशीन",
     description: "Medical suction devices for airway clearance",
     fullDescription:
       "Our medical suction machines help clear airways by removing secretions, blood, or other fluids from the respiratory tract. Essential for patients who cannot clear their airways naturally.",
@@ -266,6 +275,7 @@ const equipmentData = {
   },
   "air-bed": {
     name: "Air Bed",
+    hindiname: "एयर बेड",
     description: "Pressure relief air mattresses for bedridden patients",
     fullDescription:
       "Our air beds provide pressure relief and comfort for bedridden patients, helping prevent pressure sores and improving circulation. The alternating pressure system ensures optimal patient comfort.",
@@ -297,6 +307,7 @@ const equipmentData = {
   },
   "commode-chair": {
     name: "Commode Chair",
+    hindiname: "कमोड चेयर",
     description: "Portable toilet chairs for patient convenience",
     fullDescription:
       "Our commode chairs provide a convenient toileting solution for patients with mobility limitations. Designed for comfort and hygiene, these chairs can be used bedside or over existing toilets.",
@@ -328,6 +339,7 @@ const equipmentData = {
   },
   "walking-stick": {
     name: "Walking Stick",
+    hindiname: "चलने की छड़ी (एक पैर/चार पैर वाली)",
     description: "Support canes and walking sticks for stability",
     fullDescription:
       "Our walking sticks provide additional support and stability for patients with mild mobility issues. Available in various styles including single-point and quad canes for different levels of support needed.",
@@ -359,6 +371,7 @@ const equipmentData = {
   },
   "drip-stand": {
     name: "Drip Stand",
+    hindiname: "ड्रिप स्टैंड",
     description: "IV stands for intravenous therapy support",
     fullDescription:
       "Our drip stands provide stable support for IV bags and medical equipment during intravenous therapy. Designed with mobility and stability in mind for both hospital and home use.",
@@ -390,6 +403,7 @@ const equipmentData = {
   },
   "orthopedic-belt": {
     name: "Orthopedic Belt",
+    hindiname: "ऑर्थोपेडिक बेल्ट",
     description: "Support belts for back and joint problems",
     fullDescription:
       "Our orthopedic belts provide targeted support for back pain, posture correction, and joint stability. Available in various sizes and styles to address different orthopedic needs.",
@@ -421,6 +435,7 @@ const equipmentData = {
   },
   "patient-back-rest": {
     name: "Patient Back Rest",
+    hindiname: "पेशेंट बैक रेस्ट",
     description: "Adjustable back support for bed-bound patients",
     fullDescription:
       "Our patient back rests provide comfortable positioning and support for bed-bound patients. Adjustable angles help patients sit up comfortably for eating, reading, or medical procedures.",
@@ -452,6 +467,7 @@ const equipmentData = {
   },
   "patient-monitor": {
     name: "Patient Monitor",
+    hindiname: "पेशेंट मॉनिटर",
     description: "Multi-parameter monitor for continuous vital signs tracking",
     fullDescription:
       "Our patient monitors provide accurate, real-time tracking of critical vital signs including ECG (3/5-lead), oxygen saturation (SpO₂), non-invasive blood pressure (NIBP), temperature, and pulse rate. Designed for hospitals, ICUs, emergency care, and home monitoring, these devices ensure continuous patient safety and timely medical response.",
@@ -489,6 +505,7 @@ const equipmentData = {
   },
   "bipap-machine": {
     name: "BiPAP/CPAP Machine",
+    hindiname: "बाइपैप/सीपैप मशीन",
     description: "Compact BiPAP device for non-invasive breathing support.",
     fullDescription:
       "BiPAP machines deliver two air pressure levels—higher during inhalation (IPAP) and lower during exhalation (EPAP)—to make breathing easier. They help manage sleep apnea, COPD, and other respiratory conditions by maintaining oxygen levels and reducing carbon dioxide buildup.",
@@ -525,6 +542,7 @@ const equipmentData = {
   },
   "water-bed": {
     name: "Water Bed",
+    hindiname: "वाटर बेड",
     description: "Specialized water-filled mattress designed to prevent bedsores and improve patient comfort during long-term care.",
     fullDescription:
       "Hospital water beds are designed to reduce pressure points and improve circulation in bedridden patients. They help prevent bedsores, promote comfort, and ensure better care during extended hospital stays.",
@@ -563,6 +581,7 @@ const equipmentData = {
   },
   "crutches": {
     name: "Crutches",
+    hindiname: "बैसाखी",
     description: "Supportive walking aids designed to help patients maintain balance, reduce weight-bearing, and improve mobility during recovery.",
     fullDescription:
       "Crutches are essential mobility aids for patients with temporary or permanent lower-limb injuries or disabilities. They provide stability, reduce pressure on the legs, and allow safe movement while promoting recovery.",
@@ -633,13 +652,13 @@ export default function EquipmentDetailPage({ params }: PageProps) {
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <Link
-            href="/services/medical-equipment"
+            href="/medical-equipment"
             className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Medical Equipment
           </Link>
-          <h1 className="text-4xl font-bold mb-4">{equipment.name}</h1>
+          <h1 className="text-4xl font-bold mb-4">{equipment.name} ({equipment.hindiname})</h1>
           <p className="text-xl opacity-90">{equipment.description}</p>
           <div className="flex items-center gap-4 mt-6">
             <div className="flex items-center gap-2 bg-green-500/20 px-4 py-2 rounded-full">
@@ -801,87 +820,8 @@ export default function EquipmentDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Footer */}
-       <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-              <div className="space-y-2">
-                <Link href="/" className="block hover:text-[#db4637] transition-colors">
-                  Home
-                </Link>
-                <Link href="/about" className="block hover:text-[#db4637] transition-colors">
-                  About Us
-                </Link>
-                <Link href="/services/funeral-van" className="block hover:text-[#db4637] transition-colors">
-                  Funeral Van Service
-                </Link>
-                <Link href="/services/medical-equipment" className="block hover:text-[#db4637] transition-colors">
-                  Medical Equipment
-                </Link>
-                <Link href="/contact" className="block hover:text-[#db4637] transition-colors">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Our Services</h3>
-              <div className="space-y-2">
-                <p className="text-gray-300">Funeral Van Service (Swarg Rath)</p>
-                {/* <p className="text-gray-300">Dead Body Transportation - 24/7</p> */}
-                <p className="text-gray-300">Rent-Free Medical Equipment</p>
-                <p className="text-gray-300">Rent Free Home Care Equipment</p>
-                <p className="text-gray-300">24/7 Emergency Support</p>
-                <p className="text-gray-300">Community Healthcare Services</p>
-              </div>
-            </div>
-            <div>
-              {/* <h3 className="text-xl font-bold mb-4">R.S. Poddar Charitable Trust</h3> */}
-              <div>
-                <Image
-                  src="/RSPODDARWHITE.png"
-                  alt="R.S. Poddar Charitable Trust"
-                  width={300}
-                  height={80}
-                  className="mb-1"
-                />
-              </div>
-              <p className="text-gray-300 mb-4 ml-2">
-                Standing Beside You in Illness, Crisis, and Loss.
-              </p>
-              {/* <div className="flex items-center gap-2">
-                <Heart className="h-5 w-5 text-[#db4637]" />
-                <span className="text-sm">Compassionate services for every family in need</span>
-              </div> */}
-            </div>
-          </div>
-          <div className=" text-center">
-            <p className="text-gray-400 text-sm">
-              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
-                href="/privacy-policy"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Privacy Policy
-              </Link> |{" "}
-              <Link
-                href="/terms-and-conditions"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Terms and Conditions
-              </Link>
-            </p>
-          </div>
-          <div className="border-t border-gray-700 pt-4 text-center mt-4">
-            <h2 className="mb-2">Disclaimer</h2>
-            <p className="text-gray-400 text-sm text-justify">
-              All rent-free medical equipment provided by R. S. Poddar Charitable Trust are intended solely for temporary use and convenience. Please consult with a licensed doctor or healthcare provider before using any equipment to ensure it is appropriate for your individual medical needs. We do not provide medical advice, diagnosis or treatment and we assume no liability for any misuse, injury or adverse outcome resulting from the use of the equipment. <br />
-              A refundable security deposit will be applicable and returned upon proper and timely return of the equipment in good condition. By accepting and using the equipment, you agree to assume full responsibility for its safe and appropriate use.
-            </p>
-
-          </div>
-        </div>
-      </footer>
+     {/* Footer */}
+      <Footer/>
     </div>
   )
 }

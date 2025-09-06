@@ -1,3 +1,4 @@
+import Footer from "@/components/footer"
 import { Heart, Phone, CheckCircle, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -5,6 +6,7 @@ import Link from "next/link"
 const medicalEquipment = [
   {
     name: "Hospital Bed",
+    hindiname: "हॉस्पिटल बेड",
     description: "Adjustable hospital beds for patient comfort and care",
     slug: "hospital-bed",
     image: "/hospital-bed.png", 
@@ -12,98 +14,114 @@ const medicalEquipment = [
   },
   {
     name: "Drip Stand",
+    hindiname: "ड्रिप स्टैंड",
     description: "IV stands for intravenous therapy and medication administration",
     slug: "drip-stand",
     image: "/drip-stand.png",
   },
   {
     name: "Nebulizer Machine",
+    hindiname: "नेबुलाइज़र मशीन",
     description: "Respiratory therapy devices for medication delivery via inhalation",
     slug: "nebulizer",
     image: "/nebulizer.png",
   },
   {
     name: "Walking Stick (Single Leg/Four legs)",
+    hindiname: " चलने की छड़ी (एक पैर/चार पैर वाली)",
     description: "Support canes and walking sticks for mobility assistance",
     slug: "walking-stick",
     image: "/walking-stick.png",
   },
   {
     name: "Walker Folding (With wheels/Without wheels)",
+    hindiname: "वॉकर फोल्डिंग (पहियों के साथ/बिना पहियों के)",
     description: "Folding walkers with and without wheels for mobility support",
     slug: "walker",
     image: "/walker.png",
   },
   {
     name: "Wheel Chair",
+    hindiname: "व्हीलचेयर",
     description: "Manual wheelchairs for patient mobility and transportation",
     slug: "wheelchair",
     image: "/wheelchair.png",
   },
   {
     name: "Pulse Oximeter",
+    hindiname: "पल्स ऑक्सीमीटर",
     description: "Digital devices to monitor oxygen saturation and pulse rate",
     slug: "pulse-oximeter",
     image: "/pulse-oximeter.png",
   },
   {
     name: "Phlegm Suction Machine",
+    hindiname: "बलगम सक्शन मशीन",
     description: "Medical suction devices for airway clearance and secretion removal",
     slug: "suction-machine",
     image: "/suction-machine.png",
   },
   {
     name: "Oxygen Concentrator",
+    hindiname: "ऑक्सीजन कंसंट्रेटर",
     description: "High-quality oxygen concentrators for continuous respiratory support",
     slug: "oxygen-concentrator",
     image: "/oxygen-concentrator.png",
   },
   {
     name: "Patient Monitor",
+    hindiname: "पेशेंट मॉनिटर",
     description: "Multi-parameter monitors for vital signs tracking",
     slug: "patient-monitor",
     image: "/patient-monitor.png",
   },
   {
     name: "Oxygen Cylinder (10 ltr/47 ltr)",
+    hindiname: "ऑक्सीजन सिलेंडर (10 लीटर/47 लीटर)",
     description: "Medical grade oxygen cylinders in 10L and 30L capacities",
     slug: "oxygen-cylinder",
     image: "/oxygen-cylinder.png",
   },
   {
     name: "Air Bed",
+    hindiname: "एयर बेड",
     description: "Pressure relief air mattresses for bedridden patients",
     slug: "air-bed",
     image: "/air-bed.png",
   },
   {
     name: "Commode Chair",
+    hindiname: "कमोड चेयर",
     description: "Portable toilet chairs for patient convenience and dignity",
     slug: "commode-chair",
     image: "/commode-chair.png",
   },
   {
     name: "Patient Back Rest",
+    hindiname: "पेशेंट बैक रेस्ट",
     description: "Adjustable back support for bed-bound patients",
     slug: "patient-back-rest",
     image: "/patient-back-rest.png",
   },
   {
     name: "BiPAP/CPAP Machine",
+    hindiname: "बाइपैप/सीपैप मशीन",
     description: "Bi-level positive airway pressure machines for sleep apnea and respiratory support",
     slug: "bipap-machine",
     image: "/bipap-machine.png",
   },
   {
     name: "Water Bed",
+    hindiname: "वाटर बेड",
     description: "Specialized water-filled mattress designed to prevent bedsores and improve patient comfort during long-term care.",
     slug: "water-bed",
     image: "/water-bed.png",
   },
   {
-    name: "crutches",
+    name: "Crutches",
+    hindiname: "बैसाखी",
     description: "Specialized water-filled mattress designed to prevent bedsores and improve patient comfort during long-term care.",
-    slug: "Crutches",
+    slug: "crutches",
     image: "/crutches.png",
   },
 ]
@@ -189,12 +207,13 @@ export default function MedicalEquipmentService() {
 
       {/* Content */}
       <div className="p-6">
-        <div className="flex items-start justify-between mb-4">
+        <div className="flex items-start justify-between">
           <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#db4637] transition-colors">
-            {equipment.name}
+            {equipment.name} 
           </h3>
           <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#db4637] transition-colors" />
         </div>
+        <div className="mb-4">{equipment.hindiname}</div>
         <p className="text-gray-600 mb-4">{equipment.description}</p>
         <div className="flex items-center justify-end">
           <span className="text-[#db4637] font-semibold">View Details</span>
@@ -258,87 +277,8 @@ export default function MedicalEquipmentService() {
         </div>
 
       </div>
-        {/* Footer */}
-       <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-              <div className="space-y-2">
-                <Link href="/" className="block hover:text-[#db4637] transition-colors">
-                  Home
-                </Link>
-                <Link href="/about" className="block hover:text-[#db4637] transition-colors">
-                  About Us
-                </Link>
-                <Link href="/services/funeral-van" className="block hover:text-[#db4637] transition-colors">
-                  Funeral Van Service
-                </Link>
-                <Link href="/services/medical-equipment" className="block hover:text-[#db4637] transition-colors">
-                  Medical Equipment
-                </Link>
-                <Link href="/contact" className="block hover:text-[#db4637] transition-colors">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Our Services</h3>
-              <div className="space-y-2">
-                <p className="text-gray-300">Funeral Van Service (Swarg Rath)</p>
-                {/* <p className="text-gray-300">Dead Body Transportation - 24/7</p> */}
-                <p className="text-gray-300">Rent-Free Medical Equipment</p>
-                <p className="text-gray-300">Rent Free Home Care Equipment</p>
-                <p className="text-gray-300">24/7 Emergency Support</p>
-                <p className="text-gray-300">Community Healthcare Services</p>
-              </div>
-            </div>
-            <div>
-              {/* <h3 className="text-xl font-bold mb-4">R.S. Poddar Charitable Trust</h3> */}
-              <div>
-                <Image
-                  src="/RSPODDARWHITE.png"
-                  alt="R.S. Poddar Charitable Trust"
-                  width={300}
-                  height={80}
-                  className="mb-1"
-                />
-              </div>
-              <p className="text-gray-300 mb-4 ml-2">
-                Standing Beside You in Illness, Crisis, and Loss.
-              </p>
-              {/* <div className="flex items-center gap-2">
-                <Heart className="h-5 w-5 text-[#db4637]" />
-                <span className="text-sm">Compassionate services for every family in need</span>
-              </div> */}
-            </div>
-          </div>
-          <div className=" text-center">
-            <p className="text-gray-400 text-sm">
-              Copyright © 2025 R S Poddar Charitable Trust. All Rights Reserved. | <Link
-                href="/privacy-policy"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Privacy Policy
-              </Link> |{" "}
-              <Link
-                href="/terms-and-conditions"
-                className="text-gray-400  hover:text-[#d4cee0] transition-colors"
-              >
-                Terms and Conditions
-              </Link>
-            </p>
-          </div>
-          <div className="border-t border-gray-700 pt-4 text-center mt-4">
-            <h2 className="mb-2">Disclaimer</h2>
-            <p className="text-gray-400 text-sm text-justify">
-              All rent-free medical equipment provided by R. S. Poddar Charitable Trust are intended solely for temporary use and convenience. Please consult with a licensed doctor or healthcare provider before using any equipment to ensure it is appropriate for your individual medical needs. We do not provide medical advice, diagnosis or treatment and we assume no liability for any misuse, injury or adverse outcome resulting from the use of the equipment. <br />
-              A refundable security deposit will be applicable and returned upon proper and timely return of the equipment in good condition. By accepting and using the equipment, you agree to assume full responsibility for its safe and appropriate use.
-            </p>
-
-          </div>
-        </div>
-      </footer>
+       {/* Footer */}
+      <Footer/>
     </div>
   )
 }
