@@ -406,7 +406,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Address</h3>
               {/* <p className="text-gray-600 text-justify">22, Ground Floor, Biswa Nagar, New Sanganer Road, Opp. Metro Pillar No. 75, Jaipur, Rajasthan, India – 302019</p> */}
-              <a href="https://shorturl.at/vlqmH" className="text-gray-600">https://shorturl.at/vlqmH</a>
+              <a href="https://shorturl.at/vlqmH" className="text-gray-600">Google Link</a>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mb-4">
