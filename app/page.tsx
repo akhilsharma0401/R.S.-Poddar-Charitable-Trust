@@ -341,9 +341,9 @@ export default function Home() {
 
       {/* Trustees Section */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Our Leadership</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -363,8 +363,108 @@ export default function Home() {
               </CardHeader>
             </Card>
           </div>
+          <div className="grid md:grid-cols-4 gap-8">
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">NA</span>
+                </div>
+                <CardTitle className="text-xl">Naveen Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader className="px-8">
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">AA</span>
+                </div>
+                <CardTitle className="text-xl">Aman Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">SA</span>
+                </div>
+                <CardTitle className="text-xl">Shubham Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">SA</span>
+                </div>
+                <CardTitle className="text-xl">Saurabh Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
         </div>
       </section>
+
+      {/* <section className="py-16 px-5 bg-gray-50">
+        <div className="">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Our Leadership</h2>
+          <div className="grid md:grid-cols-6 gap-5">
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">KA</span>
+                </div>
+                <CardTitle className="text-xl">Kailash Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">SA</span>
+                </div>
+                <CardTitle className="text-xl">Suresh Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">NA</span>
+                </div>
+                <CardTitle className="text-xl">Naveen Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader className="px-8">
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">AA</span>
+                </div>
+                <CardTitle className="text-xl">Aman Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">SA</span>
+                </div>
+                <CardTitle className="text-xl">Shubham Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-20 h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white text-2xl font-bold">SA</span>
+                </div>
+                <CardTitle className="text-xl">Saurabh Agarwal</CardTitle>
+                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 px-4 bg-[#db4637] text-white">

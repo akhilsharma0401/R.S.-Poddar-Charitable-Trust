@@ -84,8 +84,8 @@ export default function AboutPage() {
 
         {/* Leadership */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Leadership</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-12">Our Leadership</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-8">
             <div className="text-center p-6 bg-white rounded-lg shadow-md">
               <div className="w-24 h-24 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">KA</span>
@@ -93,7 +93,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold mb-2">Kailash Agarwal</h3>
               <p className="text-[#db4637] font-medium mb-3">Managing Trustee</p>
               <p className="text-gray-600">
-                Dedicated to community service and ensuring our mission reaches those who need it most.
+                Dedicated to serving the community and ensuring our mission reaches those who need it most.
               </p>
             </div>
             <div className="text-center p-6 bg-white rounded-lg shadow-md">
@@ -103,7 +103,49 @@ export default function AboutPage() {
               <h3 className="text-xl font-semibold mb-2">Suresh Agarwal</h3>
               <p className="text-[#db4637] font-medium mb-3"> Managing Trustee</p>
               <p className="text-gray-600">
-                Committed to expanding our services and building lasting partnerships within the community.
+                Focused on expanding our services and building lasting partnerships within the community.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div className="w-24 h-24 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-2xl font-bold">NA</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Naveen Agarwal</h3>
+              <p className="text-[#db4637] font-medium mb-3">Managing Trustee</p>
+              <p className="text-gray-600">
+                Committed to community service and ensuring our initiatives create meaningful impact.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div className="w-24 h-24 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-2xl font-bold">AA</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Aman Agarwal</h3>
+              <p className="text-[#db4637] font-medium mb-3"> Managing Trustee</p>
+              <p className="text-gray-600">
+                Working to expand our outreach and foster strong, long-term community relationships.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div className="w-24 h-24 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-2xl font-bold">SA</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Shubham Agarwal</h3>
+              <p className="text-[#db4637] font-medium mb-3">Managing Trustee</p>
+              <p className="text-gray-600">
+                Passionate about service and ensuring our programs bring support where it’s needed most.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div className="w-24 h-24 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-2xl font-bold">SA</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Saurabh Agarwal</h3>
+              <p className="text-[#db4637] font-medium mb-3"> Managing Trustee</p>
+              <p className="text-gray-600">
+                Dedicated to strengthening our services and creating sustainable community partnerships.
               </p>
             </div>
           </div>
@@ -119,8 +161,8 @@ export default function AboutPage() {
         </div>
 
       </div>
-       {/* Footer */}
-      <Footer/>
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
