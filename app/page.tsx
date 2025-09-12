@@ -370,7 +370,7 @@ export default function Home() {
                   <span className="text-white text-2xl font-bold">NA</span>
                 </div>
                 <CardTitle className="text-xl">Naveen Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+                <CardDescription className="text-[#db4637] font-medium">Trustee</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -379,7 +379,7 @@ export default function Home() {
                   <span className="text-white text-2xl font-bold">AA</span>
                 </div>
                 <CardTitle className="text-xl">Aman Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+                <CardDescription className="text-[#db4637] font-medium">Trustee</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -388,7 +388,7 @@ export default function Home() {
                   <span className="text-white text-2xl font-bold">SA</span>
                 </div>
                 <CardTitle className="text-xl">Shubham Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+                <CardDescription className="text-[#db4637] font-medium">Trustee</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -397,7 +397,7 @@ export default function Home() {
                   <span className="text-white text-2xl font-bold">SA</span>
                 </div>
                 <CardTitle className="text-xl">Saurabh Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
+                <CardDescription className="text-[#db4637] font-medium">Trustee</CardDescription>
               </CardHeader>
             </Card>
           </div>

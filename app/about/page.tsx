@@ -113,7 +113,7 @@ export default function AboutPage() {
                 <span className="text-white text-2xl font-bold">NA</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Naveen Agarwal</h3>
-              <p className="text-[#db4637] font-medium mb-3">Managing Trustee</p>
+              <p className="text-[#db4637] font-medium mb-3">Trustee</p>
               <p className="text-gray-600">
                 Committed to community service and ensuring our initiatives create meaningful impact.
               </p>
@@ -123,7 +123,7 @@ export default function AboutPage() {
                 <span className="text-white text-2xl font-bold">AA</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Aman Agarwal</h3>
-              <p className="text-[#db4637] font-medium mb-3"> Managing Trustee</p>
+              <p className="text-[#db4637] font-medium mb-3">Trustee</p>
               <p className="text-gray-600">
                 Working to expand our outreach and foster strong, long-term community relationships.
               </p>
@@ -133,7 +133,7 @@ export default function AboutPage() {
                 <span className="text-white text-2xl font-bold">SA</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Shubham Agarwal</h3>
-              <p className="text-[#db4637] font-medium mb-3">Managing Trustee</p>
+              <p className="text-[#db4637] font-medium mb-3">Trustee</p>
               <p className="text-gray-600">
                 Passionate about service and ensuring our programs bring support where it’s needed most.
               </p>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 <span className="text-white text-2xl font-bold">SA</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Saurabh Agarwal</h3>
-              <p className="text-[#db4637] font-medium mb-3"> Managing Trustee</p>
+              <p className="text-[#db4637] font-medium mb-3">Trustee</p>
               <p className="text-gray-600">
                 Dedicated to strengthening our services and creating sustainable community partnerships.
               </p>
