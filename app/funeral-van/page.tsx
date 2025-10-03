@@ -48,7 +48,7 @@ export default function FuneralVanService() {
               <p className="opacity-90">We respond immediately to all requests</p>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative ">
             <FuneralVanSlider />
           </div>
           {/* <div className="relative">

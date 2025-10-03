@@ -25,7 +25,7 @@ export default function FuneralVanSlider() {
   ];
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="relative w-100 md:w-full max-w-4xl mx-auto">
      <Swiper
   modules={[Navigation, Pagination, Autoplay]}
   navigation={{
