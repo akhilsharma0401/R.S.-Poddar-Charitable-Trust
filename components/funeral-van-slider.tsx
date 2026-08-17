@@ -25,7 +25,7 @@ export default function FuneralVanSlider() {
   ];
 
   return (
-    <div className="relative w-100 md:w-full max-w-4xl mx-auto">
+    <div className="relative w-full min-w-0 max-w-4xl mx-auto">
      <Swiper
   modules={[Navigation, Pagination, Autoplay]}
   navigation={{
@@ -35,8 +35,7 @@ export default function FuneralVanSlider() {
   pagination={{ clickable: true }}
   autoplay={{ delay: 4000, disableOnInteraction: false }}
   loop
-  className="rounded-lg shadow-lg"
-  
+  className="w-full max-w-full rounded-lg shadow-lg"
 >
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx}>
@@ -45,6 +44,7 @@ export default function FuneralVanSlider() {
               alt={slide.alt}
               width={800}
               height={500}
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 600px"
               className="w-full h-auto rounded-lg object-cover"
               priority={idx === 0}
             />

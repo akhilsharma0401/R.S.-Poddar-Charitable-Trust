@@ -48,7 +48,7 @@
 
 
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
@@ -63,14 +63,22 @@ export const metadata: Metadata = {
   generator: "v0.app",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  // Users must stay able to zoom — never lock maximumScale/userScalable
+  viewportFit: "cover",
+  themeColor: "#453066",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={GeistMono.variable /* exposes --font-geist-mono */}>
-      <body className={`${GeistSans.className} antialiased`}>
+      <body className={`${GeistSans.className} antialiased overflow-x-hidden`}>
         <Navigation />
-        <main>{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );

@@ -16,19 +16,19 @@ const TermsPage: React.FC = () => {
     <main className="min-h-screen bg-gradient-to-b from-[#faf7ff] to-white">
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="mx-auto max-w-6xl px-4 pt-16 pb-10">
-          <div className="rounded-3xl bg-white shadow-sm border p-8 md:p-10">
-            <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#453066]/10">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 lg:pt-16 pb-8 sm:pb-10">
+          <div className="rounded-2xl sm:rounded-3xl bg-white shadow-sm border p-5 sm:p-8 md:p-10">
+            <div className="flex items-start gap-3 sm:gap-4">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-2xl bg-[#453066]/10">
                 <ShieldCheck className="h-6 w-6 text-[#453066]" />
               </div>
               <div className="flex-1">
-                <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
                   Terms & Conditions
                 </h1>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-sm sm:text-base text-gray-600">
                   Welcome to R S Poddar Charitable Trust (“we,” “our,” “us”). By accessing our
-                  website (<a href="https://www.rspoddar.org" className="underline">www.rspoddar.org</a>)
+                  website (<a href="https://www.rspoddar.org" className="underline break-words">www.rspoddar.org</a>)
                   or using our services, you agree to the following Terms and Conditions.
                 </p>
                 {/* <p className="mt-1 text-sm text-gray-500">Last Updated: 04 September 2025</p> */}
@@ -62,10 +62,10 @@ const TermsPage: React.FC = () => {
       </section>
 
       {/* Body */}
-      <section className="mx-auto max-w-6xl px-4 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-20 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
         {/* Sidebar */}
         <aside className="lg:col-span-4">
-          <div className="sticky top-6 rounded-3xl border bg-white p-6 shadow-sm">
+          <div className="lg:sticky lg:top-28 rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-3">
               <FileText className="h-5 w-5 text-[#453066]" />
               <h2 className="font-semibold">Quick Navigation</h2>
@@ -83,7 +83,7 @@ const TermsPage: React.FC = () => {
                 <a
                   key={i.id}
                   href={`#${i.id}`}
-                  className="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                  className="block rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   {i.title}
                 </a>
@@ -94,10 +94,10 @@ const TermsPage: React.FC = () => {
 
         {/* Content */}
         <div className="lg:col-span-8 space-y-8">
-          <section id="website-use" className="scroll-mt-24">
-            <div className="rounded-3xl border bg-white p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-semibold">1. Website Use</h3>
-              <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
+          <section id="website-use" className="scroll-mt-28">
+            <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">1. Website Use</h3>
+              <ul className="list-disc pl-5 sm:pl-6 mt-3 space-y-2 text-sm sm:text-base text-gray-700">
                 <li>The website is for <strong>informational purposes only.</strong> </li>
                 <li>We do not collect personal information through the website.</li>
                 <li>
@@ -108,10 +108,10 @@ const TermsPage: React.FC = () => {
             </div>
           </section>
 
-          <section id="services-provided" className="scroll-mt-24">
-            <div className="rounded-3xl border bg-white p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-semibold">2. Services Provided</h3>
-              <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
+          <section id="services-provided" className="scroll-mt-28">
+            <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">2. Services Provided</h3>
+              <ul className="list-disc pl-5 sm:pl-6 mt-3 space-y-2 text-sm sm:text-base text-gray-700">
                 <li>
                   We assist the public by providing <strong>Rent-Free Medical Equipment</strong>  and <strong>free hearse
                   (dead body carrying vehicle – “Swarg Rath”) services.</strong>
@@ -124,10 +124,10 @@ const TermsPage: React.FC = () => {
             </div>
           </section>
 
-          <section id="user-resp" className="scroll-mt-24">
-            <div className="rounded-3xl border bg-white p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-semibold">3. User Responsibilities</h3>
-              <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
+          <section id="user-resp" className="scroll-mt-28">
+            <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">3. User Responsibilities</h3>
+              <ul className="list-disc pl-5 sm:pl-6 mt-3 space-y-2 text-sm sm:text-base text-gray-700">
                 <li>You agree to provide accurate details when requesting services.</li>
                 <li>
                   Medical equipment provided on rental must be returned in good condition (normal
@@ -142,10 +142,10 @@ const TermsPage: React.FC = () => {
             </div>
           </section>
 
-          <section id="communication" className="scroll-mt-24">
-            <div className="rounded-3xl border bg-white p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-semibold">4. Communication Terms</h3>
-              <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
+          <section id="communication" className="scroll-mt-28">
+            <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">4. Communication Terms</h3>
+              <ul className="list-disc pl-5 sm:pl-6 mt-3 space-y-2 text-sm sm:text-base text-gray-700">
                 <li>
                   By contacting us via phone or WhatsApp, you consent to receiving service-related
                   communication (including confirmations, reminders and follow-ups).
@@ -159,10 +159,10 @@ const TermsPage: React.FC = () => {
             </div>
           </section>
 
-          <section id="liability" className="scroll-mt-24">
-            <div className="rounded-3xl border bg-white p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-semibold">5. Limitation of Liability</h3>
-              <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
+          <section id="liability" className="scroll-mt-28">
+            <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">5. Limitation of Liability</h3>
+              <ul className="list-disc pl-5 sm:pl-6 mt-3 space-y-2 text-sm sm:text-base text-gray-700">
                 <li>Our services are provided free of charge as part of our charitable objectives.</li>
                 <li>
                   We are not responsible for:
@@ -178,10 +178,10 @@ const TermsPage: React.FC = () => {
             </div>
           </section>
 
-          <section id="ip" className="scroll-mt-24">
-            <div className="rounded-3xl border bg-white p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-semibold">6. Intellectual Property</h3>
-              <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
+          <section id="ip" className="scroll-mt-28">
+            <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">6. Intellectual Property</h3>
+              <ul className="list-disc pl-5 sm:pl-6 mt-3 space-y-2 text-sm sm:text-base text-gray-700">
                 <li>
                   All content on our website (text, logos, images) belongs to R S Poddar Charitable
                   Trust unless otherwise stated.
@@ -193,10 +193,10 @@ const TermsPage: React.FC = () => {
             </div>
           </section>
 
-          <section id="law" className="scroll-mt-24">
-            <div className="rounded-3xl border bg-white p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl md:text-2xl font-semibold">7. Governing Law</h3>
-            <ul className="list-disc pl-6 mt-3 space-y-2 text-gray-700">
+          <section id="law" className="scroll-mt-28">
+            <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">7. Governing Law</h3>
+            <ul className="list-disc pl-5 sm:pl-6 mt-3 space-y-2 text-sm sm:text-base text-gray-700">
                 <li>
                   •	These Terms are governed by the laws of India.
                 </li>

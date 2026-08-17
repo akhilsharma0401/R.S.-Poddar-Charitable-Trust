@@ -5,9 +5,9 @@ import React from "react";
 export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white">
-            <div className=" px-4 sm:px-6 lg:px-8 py-12">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
                 {/* Top grid */}
-                <div className="grid gap-10 md:grid-cols-4 mb-10">
+                <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-4 mb-10">
                     <div>
                         <div className="mb-3">
                             <Image
@@ -16,18 +16,18 @@ export default function Footer() {
                                 width={300}
                                 height={80}
                                 sizes="(max-width: 640px) 220px, 300px"
-                                className="h-auto w-auto"
+                                className="h-auto w-[200px] sm:w-[240px] lg:w-[260px] max-w-full"
                                 priority
                             />
                         </div>
-                        <p className="text-gray-300 mb-4">
+                        <p className="text-sm sm:text-base text-gray-300 mb-4">
                             Standing Beside You in Illness, Crisis, and Loss.
                         </p>
                     </div>
                     {/* Quick Links */}
                     <nav aria-label="Quick links">
                         <h3 className="text-lg sm:text-xl font-bold mb-4">Quick Links</h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-2 text-sm sm:text-base">
                             <li>
                                 <Link href="/" className="hover:text-[#db4637] transition-colors">
                                     Home
@@ -59,7 +59,7 @@ export default function Footer() {
                     {/* Our Services */}
                     <div>
                         <h3 className="text-lg sm:text-xl font-bold mb-4">Our Services</h3>
-                        <ul className="space-y-2 text-gray-300">
+                        <ul className="space-y-2 text-sm sm:text-base text-gray-300">
                             <li>Funeral Van Service (Swarg Rath)</li>
                             {/* <li>Dead Body Transportation - 24/7</li> */}
                             <li>Rent-Free Medical Equipment</li>
@@ -74,22 +74,22 @@ export default function Footer() {
 
                         <h3 className="text-lg sm:text-xl font-semibold mb-2">Contact Us</h3>
                         <h4 className="text-md font-semibold">Rajasthan :</h4>
-                        <address className="not-italic text-sm text-gray-300 text-justify mb-2">
+                        <address className="not-italic text-sm text-gray-300 mb-2">
                             22, Vinayak Tower, Ground Floor, Biswa Nagar, New Sanganer Road,
                             Opp. Metro Pillar No. 75, Jaipur, Rajasthan, India – 302019 <br />
-                            Contact – 9251412412 | 7403330888
+                            Contact – <a href="tel:+919251412412" className="hover:text-[#db4637]">9251412412</a> | <a href="tel:+917403330888" className="hover:text-[#db4637]">7403330888</a>
                         </address>
                         <h4 className="text-md font-semibold">Assam :</h4>
-                        <address className="not-italic text-sm text-gray-300 text-justify">
+                        <address className="not-italic text-sm text-gray-300">
                             Amtola, Opp. Income Tax Office, Barpeta Road, Assam - 781315 <br />
-                            Contact – 7002170492 | 9678147862
+                            Contact – <a href="tel:+917002170492" className="hover:text-[#db4637]">7002170492</a> | <a href="tel:+919678147862" className="hover:text-[#db4637]">9678147862</a>
                         </address>
                     </div>
                 </div>
 
                 {/* Legal links */}
                 <div className="text-center">
-                    <p className="text-gray-400 text-sm">
+                    <p className="text-gray-400 text-xs sm:text-sm">
                         Copyright © 2025 R. S. Poddar Charitable Trust. All Rights Reserved.
                         {" | "}
                         <Link
@@ -111,7 +111,7 @@ export default function Footer() {
                 {/* Divider + Disclaimer */}
                 <div className="mt-6 border-t border-gray-700 pt-4">
                     <h2 className="text-center text-base font-semibold mb-2">Disclaimer</h2>
-                    <p className="text-gray-400 text-sm text-justify">
+                    <p className="text-gray-400 text-xs sm:text-sm text-left sm:text-justify">
                         All rent-free medical equipment provided by R. S. Poddar Charitable Trust
                         are intended solely for temporary use and convenience. Please consult with
                         a licensed doctor or healthcare provider before using any equipment to

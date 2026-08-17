@@ -633,8 +633,8 @@ export default function EquipmentDetailPage({ params }: PageProps) {
     <div className="min-h-screen bg-gray-50">
       {/* Breadcrumb */}
       <div className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center gap-2 text-sm text-gray-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-gray-600">
             <Link href="/" className="hover:text-[#db4637]">
               Home
             </Link>
@@ -649,24 +649,24 @@ export default function EquipmentDetailPage({ params }: PageProps) {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/medical-equipment"
-            className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-sm sm:text-base text-white/80 hover:text-white mb-4 sm:mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Medical Equipment
           </Link>
-          <h1 className="text-4xl font-bold mb-4">{equipment.name} ({equipment.hindiname})</h1>
-          <p className="text-xl opacity-90">{equipment.description}</p>
-          <div className="flex items-center gap-4 mt-6">
-            <div className="flex items-center gap-2 bg-green-500/20 px-4 py-2 rounded-full">
-              <CheckCircle className="w-5 h-5" />
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-balance">{equipment.name} ({equipment.hindiname})</h1>
+          <p className="text-base sm:text-lg lg:text-xl opacity-90">{equipment.description}</p>
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-5 sm:mt-6">
+            <div className="flex items-center gap-2 bg-green-500/20 px-3 sm:px-4 py-2 rounded-full text-sm sm:text-base">
+              <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
               <span>Available</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
-              <Heart className="w-5 h-5" />
+            <div className="flex items-center gap-2 bg-white/20 px-3 sm:px-4 py-2 rounded-full text-sm sm:text-base">
+              <Heart className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
               <span>Free of Charge</span>
             </div>
           </div>
@@ -674,65 +674,68 @@ export default function EquipmentDetailPage({ params }: PageProps) {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid lg:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-6 sm:space-y-8">
             {/* Description */}
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">About This Equipment</h2>
-              <p className="text-gray-700 leading-relaxed">{equipment.fullDescription}</p>
+            <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">About This Equipment</h2>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{equipment.fullDescription}</p>
             </div>
 
             {/* Features */}
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Key Features</h2>
-              <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Key Features</h2>
+              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                 {equipment.features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-sm sm:text-base text-gray-700">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Specifications */}
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Technical Specifications</h2>
-              <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Technical Specifications</h2>
+              <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1 sm:gap-4">
                 {Object.entries(equipment.specifications).map(([key, value]) => (
-                  <div key={key} className="flex justify-between py-2 border-b border-gray-100">
-                    <span className="font-medium text-gray-900">{key}:</span>
-                    <span className="text-gray-700">{value}</span>
+                  <div
+                    key={key}
+                    className="flex flex-col xs:flex-row xs:justify-between xs:gap-4 py-2 border-b border-gray-100"
+                  >
+                    <span className="text-sm sm:text-base font-medium text-gray-900 shrink-0">{key}:</span>
+                    <span className="text-sm sm:text-base text-gray-700 xs:text-right">{value}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Usage Instructions */}
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Usage Instructions</h2>
+            <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Usage Instructions</h2>
               <div className="space-y-3">
                 {equipment.usageInstructions.map((instruction, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-6 h-6 bg-[#db4637] text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
                       {index + 1}
                     </div>
-                    <span className="text-gray-700">{instruction}</span>
+                    <span className="text-sm sm:text-base text-gray-700">{instruction}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Ideal For */}
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Ideal For</h2>
+            <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Ideal For</h2>
               <div className="flex flex-wrap gap-3">
                 {equipment.idealFor.map((use, index) => (
                   <span
                     key={index}
-                    className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white px-4 py-2 rounded-full text-sm"
+                    className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm"
                   >
                     {use}
                   </span>
@@ -742,11 +745,11 @@ export default function EquipmentDetailPage({ params }: PageProps) {
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <div className="space-y-5 sm:space-y-6">
             {/* Request Equipment */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Request This Equipment</h3>
-              <p className="text-gray-600 mb-6">This equipment is available free of charge for those in need.</p>
+            <div className="bg-white rounded-lg shadow-md p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">Request This Equipment</h3>
+              <p className="text-sm sm:text-base text-gray-600 mb-6">This equipment is available free of charge for those in need.</p>
               <div className="space-y-4">
                 <a
                   href="tel:+919251412412"
@@ -756,18 +759,18 @@ export default function EquipmentDetailPage({ params }: PageProps) {
                 </a>
                 <div className="flex items-center gap-2 text-gray-600">
                   <Phone className="w-4 h-4" />
-                  <span className="text-sm">Call: +91 9251412412</span>
+                  <a href="tel:+919251412412" className="text-sm hover:text-[#db4637]">Call: +91 9251412412</a>
                 </div>
               </div>
             </div>
 
             {/* Availability */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Availability</h3>
+            <div className="bg-white rounded-lg shadow-md p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">Availability</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Currently Available</span>
+                  <span className="text-sm sm:text-base text-gray-700">Currently Available</span>
                 </div>
                 {/* <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5 text-blue-500" />
@@ -775,13 +778,13 @@ export default function EquipmentDetailPage({ params }: PageProps) {
                 </div> */}
                 <div className="flex items-center gap-2">
                   <Heart className="w-5 h-5 text-red-500" />
-                  <span className="text-gray-700">No rental charges</span>
+                  <span className="text-sm sm:text-base text-gray-700">No rental charges</span>
                 </div>
               </div>
             </div>
 
             {/* Important Notice */}
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-5 sm:p-6">
               <div className="flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
                 <div>
@@ -799,7 +802,7 @@ export default function EquipmentDetailPage({ params }: PageProps) {
 
 
             {/* Contact Info */}
-            <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white rounded-lg p-6">
+            <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white rounded-lg p-5 sm:p-6">
               <h3 className="text-lg font-bold mb-4">Need Help?</h3>
               <p className="text-sm opacity-90 mb-4">
                 Our team is available to help you with equipment selection and usage guidance.
