@@ -3,6 +3,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Footer from "@/components/footer"
 
+export const metadata = {
+  alternates: {
+    canonical: "https://www.rspoddar.org/contact",
+  },
+}
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">

@@ -7,6 +7,9 @@ export const metadata = {
   title: "Terms & Conditions | R S Poddar Charitable Trust",
   description:
     "Terms and Conditions for R S Poddar Charitable Trust (www.rspoddar.org) covering website use, services, user responsibilities, communication, IP, and governing law.",
+  alternates: {
+    canonical: "https://www.rspoddar.org/terms-and-conditions",
+  },
 };
 
 const TermsPage: React.FC = () => {

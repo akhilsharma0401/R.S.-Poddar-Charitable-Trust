@@ -825,6 +825,15 @@ export default async function EquipmentDetailPage({ params }: PageProps) {
   )
 }
 
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params
+  return {
+    alternates: {
+      canonical: `https://www.rspoddar.org/equipment/${slug}`,
+    },
+  }
+}
+
 export async function generateStaticParams() {
   return Object.keys(equipmentData).map((slug) => ({
     slug,

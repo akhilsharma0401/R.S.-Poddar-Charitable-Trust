@@ -2,6 +2,12 @@ import Footer from "@/components/footer"
 import FuneralVanSlider from "@/components/funeral-van-slider"
 import { Phone, Clock, MapPin, Heart, Shield } from "lucide-react"
 
+export const metadata = {
+  alternates: {
+    canonical: "https://www.rspoddar.org/funeral-van",
+  },
+}
+
 export default function FuneralVanService() {
   return (
     <div className="min-h-screen bg-gray-50">

@@ -7,6 +7,9 @@ export const metadata = {
   title: "Privacy Policy | R. S. Poddar Charitable Trust",
   description:
     "Privacy Policy for R. S. Poddar Charitable Trust (www.rspoddar.org) — explains how we handle personal information in connection with our charitable services.",
+  alternates: {
+    canonical: "https://www.rspoddar.org/privacy-policy",
+  },
 };
 
 const PrivacyPage: React.FC = () => {
