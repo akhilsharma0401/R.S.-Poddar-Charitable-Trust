@@ -144,7 +144,6 @@ const medicalEquipment = [
 export default function MedicalEquipmentService() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-10 sm:py-14 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -164,7 +163,6 @@ export default function MedicalEquipmentService() {
         </div>
       </div>
 
-      {/* Service Overview */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Healthcare Equipment at No Cost</h2>
@@ -175,7 +173,6 @@ export default function MedicalEquipmentService() {
           </p>
         </div>
 
-        {/* Features */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-16">
           <div className="text-center p-5 sm:p-6 bg-white rounded-lg shadow-md">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -200,7 +197,6 @@ export default function MedicalEquipmentService() {
           </div>
         </div>
 
-        {/* Equipment List */}
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12">Available Medical Equipment</h2>
           <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -210,7 +206,6 @@ export default function MedicalEquipmentService() {
       href={`/equipment/${equipment.slug}`}
       className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow group overflow-hidden"
     >
-      {/* Equipment Image */}
       <div className="relative w-full aspect-[4/3] sm:aspect-[3/2]">
         <Image
           src={equipment.image}
@@ -221,7 +216,6 @@ export default function MedicalEquipmentService() {
         />
       </div>
 
-      {/* Content */}
       <div className="p-4 sm:p-6">
         <div className="flex items-start justify-between gap-2">
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-[#db4637] transition-colors">
@@ -241,7 +235,6 @@ export default function MedicalEquipmentService() {
 
         </div>
 
-        {/* How to Request */}
         <div className="mt-10 sm:mt-16 bg-white rounded-lg shadow-lg p-5 sm:p-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">How to Request Equipment</h2>
           <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -276,7 +269,6 @@ export default function MedicalEquipmentService() {
           </div>
         </div>
 
-        {/* Contact CTA */}
         <div className="mt-10 sm:mt-16 text-center">
           <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white p-5 sm:p-8 rounded-lg">
             <h2 className="text-xl sm:text-2xl font-bold mb-4">Need Medical Equipment?</h2>
@@ -293,7 +285,6 @@ export default function MedicalEquipmentService() {
         </div>
 
       </div>
-       {/* Footer */}
       <Footer/>
     </div>
   )

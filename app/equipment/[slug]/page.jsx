@@ -79,7 +79,6 @@ const equipmentData = {
     fullDescription:
       "Our hospital beds are designed to provide maximum comfort and facilitate better patient care. With multiple adjustment options, these beds help patients maintain proper positioning and make caregiving easier for family members.",
     features: [
-      // "Electric height adjustment",
       "Head and foot elevation controls",
       "Side rails for patient safety",
       "Lockable wheels for mobility",
@@ -400,38 +399,6 @@ const equipmentData = {
     ],
     idealFor: ["IV therapy at home", "Medical treatments", "Hospital discharge care", "Medication administration","Dialysis centers","Emergency rooms & ICUs","Post-surgical recovery wards","Nursing homes & elderly care facilities"],
   },
-  "orthopedic-belt": {
-    name: "Orthopedic Belt",
-    hindiname: "ऑर्थोपेडिक बेल्ट",
-    description: "Support belts for back and joint problems",
-    fullDescription:
-      "Our orthopedic belts provide targeted support for back pain, posture correction, and joint stability. Available in various sizes and styles to address different orthopedic needs.",
-    features: [
-      "Adjustable compression",
-      "Breathable materials",
-      "Ergonomic design",
-      "Easy to wear",
-      "Machine washable",
-      "Various sizes available",
-    ],
-    specifications: {
-      Sizes: "S, M, L, XL, XXL",
-      Material: "Neoprene/Elastic blend",
-      "Compression Level": "Adjustable",
-      Width: "15-25 cm (varies by type)",
-      Color: "Black/Beige",
-      Care: "Hand/Machine washable",
-    },
-    usageInstructions: [
-      "Choose correct size for proper fit",
-      "Wear over thin clothing",
-      "Adjust compression as needed",
-      "Remove periodically to allow skin to breathe",
-      "Wash regularly with mild detergent",
-      "Consult doctor for proper usage duration",
-    ],
-    idealFor: ["Lower back pain", "Posture support", "Post-surgery support", "Work-related back strain"],
-  },
   "patient-back-rest": {
     name: "Patient Back Rest",
     hindiname: "पेशेंट बैक रेस्ट",
@@ -625,7 +592,6 @@ export default async function EquipmentDetailPage({ params }) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-gray-600">
@@ -633,7 +599,7 @@ export default async function EquipmentDetailPage({ params }) {
               Home
             </Link>
             <span>/</span>
-            <Link href="/services/medical-equipment" className="hover:text-[#db4637]">
+            <Link href="/medical-equipment" className="hover:text-[#db4637]">
               Medical Equipment
             </Link>
             <span>/</span>
@@ -642,7 +608,6 @@ export default async function EquipmentDetailPage({ params }) {
         </div>
       </div>
 
-      {/* Header */}
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
@@ -667,18 +632,14 @@ export default async function EquipmentDetailPage({ params }) {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
-          {/* Main Content */}
           <div className="lg:col-span-2 space-y-6 sm:space-y-8">
-            {/* Description */}
             <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">About This Equipment</h2>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{equipment.fullDescription}</p>
             </div>
 
-            {/* Features */}
             <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Key Features</h2>
               <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
@@ -691,7 +652,6 @@ export default async function EquipmentDetailPage({ params }) {
               </div>
             </div>
 
-            {/* Specifications */}
             <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Technical Specifications</h2>
               <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1 sm:gap-4">
@@ -707,7 +667,6 @@ export default async function EquipmentDetailPage({ params }) {
               </div>
             </div>
 
-            {/* Usage Instructions */}
             <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Usage Instructions</h2>
               <div className="space-y-3">
@@ -722,7 +681,6 @@ export default async function EquipmentDetailPage({ params }) {
               </div>
             </div>
 
-            {/* Ideal For */}
             <div className="bg-white rounded-lg shadow-md p-5 sm:p-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 sm:mb-6">Ideal For</h2>
               <div className="flex flex-wrap gap-3">
@@ -738,9 +696,7 @@ export default async function EquipmentDetailPage({ params }) {
             </div>
           </div>
 
-          {/* Sidebar */}
           <div className="space-y-5 sm:space-y-6">
-            {/* Request Equipment */}
             <div className="bg-white rounded-lg shadow-md p-5 sm:p-6">
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">Request This Equipment</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-6">This equipment is available free of charge for those in need.</p>
@@ -758,7 +714,6 @@ export default async function EquipmentDetailPage({ params }) {
               </div>
             </div>
 
-            {/* Availability */}
             <div className="bg-white rounded-lg shadow-md p-5 sm:p-6">
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">Availability</h3>
               <div className="space-y-3">
@@ -773,7 +728,6 @@ export default async function EquipmentDetailPage({ params }) {
               </div>
             </div>
 
-            {/* Important Notice */}
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-5 sm:p-6">
               <div className="flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" />
@@ -791,7 +745,6 @@ export default async function EquipmentDetailPage({ params }) {
             </div>
 
 
-            {/* Contact Info */}
             <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white rounded-lg p-5 sm:p-6">
               <h3 className="text-lg font-bold mb-4">Need Help?</h3>
               <p className="text-sm opacity-90 mb-4">
@@ -813,13 +766,11 @@ export default async function EquipmentDetailPage({ params }) {
         </div>
       </div>
 
-     {/* Footer */}
       <Footer/>
     </div>
   )
 }
 
-// Per-equipment SEO title/description; pages without an entry use the site defaults
 const seoData = {
   "oxygen-cylinder": {
     title: "Rent-Free Oxygen Cylinder in Jaipur | RS Poddar Trust",

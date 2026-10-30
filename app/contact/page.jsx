@@ -21,7 +21,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-10 sm:py-14 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -31,10 +30,8 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Contact Information */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
-          {/* Contact Details */}
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">Get in Touch</h2>
             <div className="space-y-6">
@@ -79,14 +76,12 @@ export default function ContactPage() {
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Service Hours</h3>
                   <p className="text-gray-700 mb-1">24/7 Emergency Services</p>
                   <p className="text-sm text-gray-600">Funeral van available anytime</p>
-                  {/* <p className="text-gray-700 mb-1">9:00 AM - 6:00 PM</p> */}
                   <p className="text-sm text-gray-600">Medical equipment requests</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Service Cards */}
           <div className="space-y-5 sm:space-y-6">
             <Card className="border-2 border-[#db4637]/20">
               <CardHeader>
@@ -96,13 +91,12 @@ export default function ContactPage() {
                 <p className="text-sm sm:text-base text-gray-700 mb-4">
                   Need immediate funeral van service? Call us right away. Our Swarg Rath service is available 24/7.
                 </p>
-                <a href="tel:+919251412412" className="block mb-2">
-
-                <Button className="w-full whitespace-normal bg-[#db4637] hover:bg-[#c23e2f] text-white">
-                  <Phone className="w-4 h-4 mr-2" />
-                  Call Now: +91 9251412412
+                <Button asChild className="mb-2 w-full whitespace-normal bg-[#db4637] hover:bg-[#c23e2f] text-white">
+                  <a href="tel:+919251412412">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Call Now: +91 9251412412
+                  </a>
                 </Button>
-                </a>
               </CardContent>
             </Card>
 
@@ -117,35 +111,29 @@ export default function ContactPage() {
                 <div className="space-y-2">
 
                 <div className="space-y-2 gap-2">
-                  <a href="tel:+919251412412" className="block mb-2">
-                    <Button variant="outline"
-                      className="w-full whitespace-normal border-[#453066] text-[#453066] hover:bg-[#453066] hover:text-white bg-transparent">
+                  <Button asChild variant="outline" className="mb-2 w-full whitespace-normal border-[#453066] text-[#453066] hover:bg-[#453066] hover:text-white bg-transparent">
+                    <a href="tel:+919251412412">
                       <Phone className="w-4 h-4 mr-2" />
                       +91 9251412412
-                    </Button>
-                  </a>
+                    </a>
+                  </Button>
                 </div>
                 <div className="space-y-2 gap-2">
-                  <a href="tel:+917403330888" className="block mb-2">
-                    <Button variant="outline"
-                      className="w-full whitespace-normal border-[#453066] text-[#453066] hover:bg-[#453066] hover:text-white bg-transparent">
+                  <Button asChild variant="outline" className="mb-2 w-full whitespace-normal border-[#453066] text-[#453066] hover:bg-[#453066] hover:text-white bg-transparent">
+                    <a href="tel:+917403330888">
                       <Phone className="w-4 h-4 mr-2" />
                       +91 7403330888
-                    </Button>
-                  </a>
+                    </a>
+                  </Button>
                 </div>
                 
                 <div className="space-y-2 gap-2">
-                  <a href="mailto:info@healthsquare.in" className="block">
-                    <Button
-                      variant="outline"
-                      className="w-full whitespace-normal border-[#453066] text-[#453066] hover:bg-[#453066] hover:text-white bg-transparent"
-                    >
+                  <Button asChild variant="outline" className="w-full whitespace-normal border-[#453066] text-[#453066] hover:bg-[#453066] hover:text-white bg-transparent">
+                    <a href="mailto:info@healthsquare.in">
                       <Mail className="w-4 h-4 mr-2" />
                       Email Us
-
-                    </Button>
-                  </a>
+                    </a>
+                  </Button>
                 </div>
                 </div>
               </CardContent>
@@ -169,7 +157,6 @@ export default function ContactPage() {
 
         </div>
       </div>
-      {/* Footer */}
       <Footer/>
     </div>
   )

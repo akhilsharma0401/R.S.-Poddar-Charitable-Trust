@@ -21,7 +21,6 @@ export const metadata = {
 export default function FuneralVanService() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-10 sm:py-14 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -41,7 +40,6 @@ export default function FuneralVanService() {
         </div>
       </div>
 
-      {/* Service Details */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 sm:mb-16">
           <div className="min-w-0">
@@ -67,7 +65,6 @@ export default function FuneralVanService() {
           </div>
         </div>
 
-        {/* Features */}
         <div className="mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12">Service Features</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
@@ -95,7 +92,6 @@ export default function FuneralVanService() {
           </div>
         </div>
 
-        {/* How to Request */}
         <div className="bg-white rounded-lg shadow-lg p-5 sm:p-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">How to Request Our Service</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
@@ -123,7 +119,6 @@ export default function FuneralVanService() {
           </div>
         </div>
 
-        {/* Coverage Area */}
         <div className="mt-10 sm:mt-16 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">Service Coverage</h2>
           <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white p-5 sm:p-8 rounded-lg">
@@ -138,7 +133,6 @@ export default function FuneralVanService() {
         </div>
       </div>
 
-     {/* Footer */}
       <Footer/>
     </div>
   )

@@ -5,7 +5,6 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
-                {/* Top grid */}
                 <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-4 mb-10">
                     <div>
                         <div className="mb-3">
@@ -22,7 +21,6 @@ export default function Footer() {
                             Standing Beside You in Illness, Crisis, and Loss.
                         </p>
                     </div>
-                    {/* Quick Links */}
                     <nav aria-label="Quick links">
                         <h3 className="text-lg sm:text-xl font-bold mb-4">Quick Links</h3>
                         <ul className="space-y-2 text-sm sm:text-base">
@@ -54,12 +52,10 @@ export default function Footer() {
                         </ul>
                     </nav>
 
-                    {/* Our Services */}
                     <div>
                         <h3 className="text-lg sm:text-xl font-bold mb-4">Our Services</h3>
                         <ul className="space-y-2 text-sm sm:text-base text-gray-300">
                             <li>Funeral Van Service (Swarg Rath)</li>
-                            {/* <li>Dead Body Transportation - 24/7</li> */}
                             <li>Rent-Free Medical Equipment</li>
                             <li>Rent-Free Home Care Equipment</li>
                             <li>24/7 Emergency Support</li>
@@ -67,7 +63,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Brand + Address */}
                     <div>
 
                         <h3 className="text-lg sm:text-xl font-semibold mb-2">Contact Us</h3>
@@ -85,7 +80,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Legal links */}
                 <div className="text-center">
                     <p className="text-gray-400 text-xs sm:text-sm">
                         Copyright © 2025 R. S. Poddar Charitable Trust. All Rights Reserved.
@@ -106,7 +100,6 @@ export default function Footer() {
                     </p>
                 </div>
 
-                {/* Divider + Disclaimer */}
                 <div className="mt-6 border-t border-gray-700 pt-4">
                     <h2 className="text-center text-base font-semibold mb-2">Disclaimer</h2>
                     <p className="text-gray-400 text-xs sm:text-sm text-left sm:text-justify">

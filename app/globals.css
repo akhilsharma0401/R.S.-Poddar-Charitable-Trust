@@ -75,7 +75,6 @@
 }
 
 @theme {
-  /* Extra-small breakpoint for 360–480px phones */
   --breakpoint-xs: 480px;
 }
 
@@ -124,7 +123,6 @@
   }
 
   html {
-    /* Stop iOS/Android from inflating text in landscape */
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     scroll-behavior: smooth;
@@ -132,11 +130,9 @@
 
   body {
     @apply bg-background text-foreground;
-    /* Guard against any single element causing a horizontal scrollbar */
     overflow-x: hidden;
   }
 
-  /* Long words / URLs / phone strings should wrap instead of widening the page */
   h1,
   h2,
   h3,
@@ -157,14 +153,12 @@
     height: auto;
   }
 
-  /* Anchor targets clear the sticky navigation */
   :target {
     scroll-margin-top: 6rem;
   }
 }
 
 @layer utilities {
-  /* Consistent page gutter used across every section */
   .container-page {
     width: 100%;
     margin-inline: auto;
@@ -184,7 +178,6 @@
   }
 }
 
-/* Touch targets: give interactive elements a comfortable hit area on phones */
 @media (max-width: 767px) {
   a,
   button,
@@ -193,7 +186,6 @@
   }
 }
 
-/* Swiper pagination should not sit on top of the image edge on small screens */
 .swiper-pagination-bullet-active {
   background: #db4637 !important;
 }

@@ -40,7 +40,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#453066] to-[#3f4787] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 text-white">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center mb-4 sm:mb-6">
@@ -61,36 +60,28 @@ export default function Home() {
           </p>
           <p className="text-sm sm:text-lg mb-6 sm:mb-8 opacity-80">Jaipur, Rajasthan • Since 2020</p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center">
-            <Link href="/contact" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full sm:w-auto bg-[#db4637] hover:bg-[#c23e2f] text-white px-6 sm:px-8 py-3">
+            <Button asChild size="lg" className="w-full sm:w-auto bg-[#db4637] hover:bg-[#c23e2f] text-white px-6 sm:px-8 py-3">
+              <Link href="/contact">
                 Get Support Now
-              </Button>
-            </Link>
-            <Link href="/about" className="w-full sm:w-auto">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto whitespace-normal border-white text-white hover:bg-white hover:text-[#453066] bg-transparent"
-              >
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto whitespace-normal border-white text-white hover:bg-white hover:text-[#453066] bg-transparent">
+              <Link href="/about">
                 Learn More About Our Services
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
 
       <section className="relative isolate overflow-hidden bg-gray-50 py-14 sm:py-16 lg:py-20">
-        {/* Soft background */}
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white to-gray-100" />
 
-        {/* Decorative blobs (scaled for small screens) */}
         <div className="pointer-events-none absolute -top-24 -left-24 w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full bg-[#db4637]/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 -right-24 w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full bg-[#3f4787]/10 blur-3xl" />
 
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          {/* Heading */}
           <h2 className="text-center font-extrabold leading-tight text-gray-900 text-[clamp(1.75rem,4.5vw,3.25rem)]">
             Serving Humanity with{" "}
             <span className="bg-gradient-to-r from-[#db4637] to-[#3f4787] bg-clip-text text-transparent">
@@ -101,14 +92,11 @@ export default function Home() {
             Jaipur, Rajasthan
           </p>
 
-          {/* Sub-heading */}
           <p className="mt-6 text-center font-semibold text-[#db4637] text-[clamp(1.05rem,2.5vw,1.375rem)]">
             Free Dead Body Transportation & Rent-Free Medical Equipment
           </p>
 
-          {/* Cards */}
           <div className="mt-10 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
-            {/* Card 1 */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg transition-shadow hover:shadow-2xl">
               <div className="flex items-center gap-3 sm:gap-4 mb-4">
                 <div className="shrink-0 grid place-items-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#db4637]/10 text-xl sm:text-2xl">
@@ -124,7 +112,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg transition-shadow hover:shadow-2xl">
               <div className="flex items-center gap-3 sm:gap-4 mb-4">
                 <div className="shrink-0 grid place-items-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#3f4787]/10 text-xl sm:text-2xl">
@@ -142,20 +129,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Button */}
           <div className="mt-10 sm:mt-12 text-center">
-            <Link href="/about">
-              <Button className="inline-flex items-center rounded-xl px-6 sm:px-8 py-3 sm:py-4 font-medium text-white shadow-md transition-all bg-gradient-to-r from-[#453066] to-[#3f4787] hover:from-[#3f4787] hover:to-[#db4637] text-[clamp(0.95rem,1.8vw,1rem)]">
+            <Button asChild className="inline-flex items-center rounded-xl px-6 sm:px-8 py-3 sm:py-4 font-medium text-white shadow-md transition-all bg-gradient-to-r from-[#453066] to-[#3f4787] hover:from-[#3f4787] hover:to-[#db4637] text-[clamp(0.95rem,1.8vw,1rem)]">
+              <Link href="/about">
                 Read Our Full Story
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
 
 
-      {/* Services Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
@@ -165,7 +150,6 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-            {/* Funeral Service */}
             <Card className="border-2 border-[#db4637]/20 hover:border-[#db4637]/40 transition-colors group">
               <CardHeader>
                 <div className="flex items-start sm:items-center gap-3">
@@ -201,16 +185,15 @@ export default function Home() {
                     <span> Van service </span>
                   </div>
                 </div>
-                <Link href="/funeral-van" className="block">
-                  <Button className="w-full bg-[#db4637] hover:bg-[#c23e2f] text-white group-hover:shadow-lg transition-all">
+                <Button asChild className="w-full bg-[#db4637] hover:bg-[#c23e2f] text-white group-hover:shadow-lg transition-all">
+                  <Link href="/funeral-van">
                     Get Funeral Van Service
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
-            {/* Medical Equipment */}
             <Card className="border-2 border-[#453066]/20 hover:border-[#453066]/40 transition-colors group">
               <CardHeader>
                 <div className="flex items-start sm:items-center gap-3 mb-4">
@@ -237,42 +220,35 @@ export default function Home() {
                   <strong>
                     more medical equipment items available</strong>
                 </p>
-                <Link href="/medical-equipment" className="block">
-                  <Button className="w-full bg-gradient-to-r from-[#453066] to-[#3f4787] text-white hover:opacity-90 group-hover:shadow-lg transition-all">
+                <Button asChild className="w-full bg-gradient-to-r from-[#453066] to-[#3f4787] text-white hover:opacity-90 group-hover:shadow-lg transition-all">
+                  <Link href="/medical-equipment">
                     Get Medical Equipment
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Vision Section */}
       <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20">
-        {/* layered gradient background */}
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(60%_50%_at_10%_0%,rgba(219,70,55,0.12),transparent_60%),radial-gradient(60%_50%_at_100%_100%,rgba(63,71,135,0.12),transparent_60%)]"></div>
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/70 via-white/40 to-white"></div>
 
         <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
-          {/* headline */}
           <h2 className="bg-gradient-to-r from-[#453066] via-[#3f4787] to-[#db4637] bg-clip-text text-2xl sm:text-3xl font-extrabold text-transparent md:text-4xl">
             Dignity In Action
           </h2>
 
-          {/* divider with glow */}
           <div className="mx-auto mt-4 h-[3px] w-28 rounded-full bg-gradient-to-r from-[#db4637] via-[#3f4787] to-[#453066] shadow-[0_0_28px_2px_rgba(219,70,55,0.25)]"></div>
 
-          {/* copy */}
           <p className="mx-auto mt-6 max-w-3xl text-base sm:text-lg leading-relaxed text-gray-700">
             To build a compassionate society where no one suffers alone — ensuring dignity, care, and support through
             free healthcare and end-of-life assistance for all.
           </p>
 
-          {/* feature chips with gradient border + glass card */}
           <ul className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
-            {/* chip 1 */}
             <li className="rounded-2xl bg-gradient-to-tr from-[#db4637] via-[#3f4787] to-[#453066] p-[1px]">
               <div className="flex items-center gap-3 rounded-2xl bg-white/85 p-4 backdrop-blur ring-1 ring-black/5">
                 <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-[#db4637] to-[#3f4787] text-white text-lg">
@@ -282,7 +258,6 @@ export default function Home() {
               </div>
             </li>
 
-            {/* chip 2 */}
             <li className="rounded-2xl bg-gradient-to-tr from-[#db4637] via-[#3f4787] to-[#453066] p-[1px]">
               <div className="flex items-center gap-3 rounded-2xl bg-white/85 p-4 backdrop-blur ring-1 ring-black/5">
                 <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-[#db4637] to-[#3f4787] text-white text-lg">
@@ -292,7 +267,6 @@ export default function Home() {
               </div>
             </li>
 
-            {/* chip 3 */}
             <li className="rounded-2xl bg-gradient-to-tr from-[#db4637] via-[#3f4787] to-[#453066] p-[1px]">
               <div className="flex items-center gap-3 rounded-2xl bg-white/85 p-4 backdrop-blur ring-1 ring-black/5">
                 <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-[#db4637] to-[#3f4787] text-white text-lg">
@@ -307,7 +281,6 @@ export default function Home() {
 
 
 
-      {/* Trustees Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-900">Our Leadership</h2>
@@ -373,7 +346,6 @@ export default function Home() {
       </section>
 
 
-      {/* CTA Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#db4637] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-balance">
@@ -384,25 +356,20 @@ export default function Home() {
             no charge.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center">
-            <Link href="/funeral-van" className="w-full sm:w-auto">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto whitespace-normal bg-white text-[#db4637] hover:bg-gray-100">
+            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto whitespace-normal bg-white text-[#db4637] hover:bg-gray-100">
+              <Link href="/funeral-van">
                 Call for Funeral Van Service
-              </Button>
-            </Link>
-            <Link href="/medical-equipment" className="w-full sm:w-auto">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto whitespace-normal border-white text-white hover:bg-white hover:text-[#db4637] bg-transparent"
-              >
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto whitespace-normal border-white text-white hover:bg-white hover:text-[#db4637] bg-transparent">
+              <Link href="/medical-equipment">
                 Request Medical Equipment
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-900 text-balance">
@@ -432,17 +399,16 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-8">
-            <Link href="/contact">
-              <Button className="bg-[#db4637] hover:bg-[#c23e2f] text-white px-8 py-3">
+            <Button asChild className="bg-[#db4637] hover:bg-[#c23e2f] text-white px-8 py-3">
+              <Link href="/contact">
                 Get in Touch
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <Footer/>
     </div>
   )

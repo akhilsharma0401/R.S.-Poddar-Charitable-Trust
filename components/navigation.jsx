@@ -10,11 +10,9 @@ export default function Navigation() {
 
   return (
     <>
-      {/* Top Bar */}
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-2 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl flex flex-col lg:flex-row lg:justify-between lg:items-center text-sm gap-1.5 lg:gap-4">
 
-          {/* Left side (phone + email) */}
           <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-1 gap-1.5 order-2 lg:order-1">
             <div className="flex items-center gap-2">
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
@@ -35,7 +33,6 @@ export default function Navigation() {
             </div>
           </div>
 
-          {/* Right side tagline */}
           <div className="text-left lg:text-right text-[11px] sm:text-sm leading-tight order-1 lg:order-2">
             <span>Free Funeral Van Service &amp; Medical Equipment Since 2020</span>
           </div>
@@ -43,11 +40,9 @@ export default function Navigation() {
       </div>
 
 
-      {/* Main Navigation */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center gap-3 h-16 sm:h-18 md:h-20">
-            {/* Logo */}
             <Link
               href="/"
               aria-label="R.S. Poddar Charitable Trust — Home"
@@ -65,7 +60,6 @@ export default function Navigation() {
               />
             </Link>
 
-            {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-x-4 xl:gap-x-6">
               <Link href="/" className="whitespace-nowrap text-sm xl:text-base text-gray-700 font-bold hover:text-[#db4637] transition-colors">
                 Home
@@ -90,7 +84,6 @@ export default function Navigation() {
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               className="lg:hidden -mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-gray-700 hover:bg-gray-100"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -102,7 +95,6 @@ export default function Navigation() {
             </button>
           </div>
 
-          {/* Mobile Menu */}
           {isMenuOpen && (
             <div
               id="mobile-menu"
@@ -112,7 +104,7 @@ export default function Navigation() {
                 <Link
                   href="/"
                   className="block rounded-md px-2 py-3 font-medium text-gray-700 hover:bg-gray-50 hover:text-[#db4637] transition-colors"
-                  onClick={() => setIsMenuOpen(false)}  // 👈 closes menu
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Home
                 </Link>
@@ -141,9 +133,7 @@ export default function Navigation() {
                     Medical Equipment
                 </Link>
 
-                {/* Dropdown Button */}
 
-                {/* Dropdown Links */}
 
                 <Link
                   href="/contact"

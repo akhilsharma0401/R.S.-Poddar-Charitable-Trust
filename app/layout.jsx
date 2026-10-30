@@ -21,7 +21,6 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  // Users must stay able to zoom — never lock maximumScale/userScalable
   viewportFit: "cover",
   themeColor: "#453066",
 };
@@ -32,11 +31,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={GeistMono.variable /* exposes --font-geist-mono */}
+      className={GeistMono.variable}
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
-      {/* Browser extensions (Grammarly, ColorZilla) inject attributes on <body> */}
       <body
         className={`${GeistSans.className} antialiased overflow-x-hidden`}
         suppressHydrationWarning

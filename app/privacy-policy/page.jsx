@@ -1,4 +1,3 @@
-// app/privacy/page.tsx
 import React from "react";
 import { Shield, FileText } from "lucide-react";
 import Footer from "@/components/footer";
@@ -21,7 +20,6 @@ export const metadata = {
 const PrivacyPage = () => {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#faf7ff] to-white">
-      {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 lg:pt-16 pb-8 sm:pb-10">
           <div className="rounded-2xl sm:rounded-3xl bg-white shadow-sm border p-5 sm:p-8 md:p-10">
@@ -38,18 +36,14 @@ const PrivacyPage = () => {
                   privacy of individuals who use our services. This Privacy Policy explains how we
                   handle personal information in connection with our charitable activities.
                 </p>
-                {/* <p className="mt-1 text-sm text-gray-500">Last Updated: 04 September 2025</p> */}
               </div>
             </div>
 
-            {/* Callout */}
           </div>
         </div>
       </section>
 
-      {/* Body */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-20 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
-        {/* Sidebar */}
         <aside className="lg:col-span-4">
           <div className="lg:sticky lg:top-28 rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-3">
@@ -78,7 +72,6 @@ const PrivacyPage = () => {
           </div>
         </aside>
 
-        {/* Content */}
         <div className="lg:col-span-8 space-y-8">
           <section id="info-collect" className="scroll-mt-28">
             <div className="rounded-2xl sm:rounded-3xl border bg-white p-5 sm:p-6 md:p-8 shadow-sm">
@@ -180,7 +173,6 @@ const PrivacyPage = () => {
           
         </div>
       </section>
-       {/* Footer */}
       <Footer/>
     </main>
   );

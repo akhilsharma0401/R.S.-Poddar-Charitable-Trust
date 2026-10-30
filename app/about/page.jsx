@@ -19,7 +19,6 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white py-10 sm:py-14 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -29,9 +28,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* Mission Statement */}
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Our Mission</h2>
           <p className="text-base sm:text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
@@ -41,7 +38,6 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Values */}
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-16">
           <div className="text-center p-4 sm:p-6 bg-white rounded-lg shadow-md">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -73,7 +69,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Our Story */}
         <div className="bg-white rounded-lg shadow-lg p-5 sm:p-8 mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Our Story</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
@@ -95,7 +90,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Leadership */}
         <div className="mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-12">Our Leadership</h2>
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto mb-6 sm:mb-8">
@@ -164,7 +158,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Vision */}
         <div className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white p-5 sm:p-8 rounded-lg text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Our Vision</h2>
           <p className="text-base sm:text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
@@ -174,7 +167,6 @@ export default function AboutPage() {
         </div>
 
       </div>
-      {/* Footer */}
       <Footer />
     </div>
   )
