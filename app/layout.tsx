@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: "Free Funeral Van & Medical Equipment in Jaipur | RS Poddar",
     description:
       "Free funeral van (Swarg Rath) & rent-free medical equipment in Jaipur. 24/7 dead body transportation by R. S. Poddar Charitable Trust. Call 9251412412.",
+      url : "https://www.rspoddar.org",
   },
 };
 
@@ -33,8 +34,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={GeistMono.variable /* exposes --font-geist-mono */}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
     >
-      <body className={`${GeistSans.className} antialiased overflow-x-hidden`}>
+      {/* Browser extensions (Grammarly, ColorZilla) inject attributes on <body> */}
+      <body
+        className={`${GeistSans.className} antialiased overflow-x-hidden`}
+        suppressHydrationWarning
+      >
         <Navigation />
         <main className="w-full">{children}</main>
       </body>

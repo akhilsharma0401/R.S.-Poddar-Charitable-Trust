@@ -61,6 +61,7 @@ export default function Navigation() {
                 priority
                 sizes="(max-width: 480px) 110px, (max-width: 640px) 130px, (max-width: 1024px) 160px, 200px"
                 className="object-contain h-auto w-[110px] xs:w-[130px] sm:w-[160px] lg:w-[180px] xl:w-[200px]"
+                style={{ height: "auto" }}
               />
             </Link>
 

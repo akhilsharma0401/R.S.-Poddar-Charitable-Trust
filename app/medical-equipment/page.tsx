@@ -4,6 +4,15 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata = {
+    title: "Rent-Free Medical Equipment in Jaipur | Hospital Bed, Oxygen",
+  description:
+    "Rent-free hospital bed, oxygen concentrator, wheelchair, walker, suction machine & more in Jaipur. Free home care equipment by RS Poddar Trust.",
+  openGraph: {
+    title: "Rent-Free Medical Equipment in Jaipur | Hospital Bed, Oxygen",
+    description:
+      "Rent-free hospital bed, oxygen concentrator, wheelchair, walker, suction machine & more in Jaipur. Free home care equipment by RS Poddar Trust.",
+    url: "https://www.rspoddar.org/medical-equipment",
+  },
   alternates: {
     canonical: "https://www.rspoddar.org/medical-equipment",
   },

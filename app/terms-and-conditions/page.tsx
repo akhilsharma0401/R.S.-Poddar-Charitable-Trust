@@ -4,9 +4,15 @@ import { ShieldCheck, FileText } from "lucide-react";
 import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "Terms & Conditions | R S Poddar Charitable Trust",
+   title: "Terms & Conditions | R. S. Poddar Charitable Trust",
   description:
-    "Terms and Conditions for R S Poddar Charitable Trust (www.rspoddar.org) covering website use, services, user responsibilities, communication, IP, and governing law.",
+    "Terms & conditions for free funeral van service and rent-free medical equipment by R. S. Poddar Charitable Trust, incl. security deposit & usage rules.",
+  openGraph: {
+    title: "Terms & Conditions | R. S. Poddar Charitable Trust",
+    description:
+      "Terms & conditions for free funeral van service and rent-free medical equipment by R. S. Poddar Charitable Trust, incl. security deposit & usage rules.",
+    url: "https://www.rspoddar.org/terms-and-conditions",
+  },
   alternates: {
     canonical: "https://www.rspoddar.org/terms-and-conditions",
   },

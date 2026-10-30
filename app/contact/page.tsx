@@ -4,6 +4,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Footer from "@/components/footer"
 
 export const metadata = {
+    title: "Contact RS Poddar Trust | Funeral Van & Medical Help Jaipur",
+  description:
+    "Contact R. S. Poddar Charitable Trust for free funeral van or medical equipment in Jaipur & Assam. Call 9251412412. 24/7 support.",
+  openGraph: {
+    title: "Contact RS Poddar Trust | Funeral Van & Medical Help Jaipur",
+    description:
+      "Contact R. S. Poddar Charitable Trust for free funeral van or medical equipment in Jaipur & Assam. Call 9251412412. 24/7 support.",
+    url: "https://www.rspoddar.org/contact",
+  },
   alternates: {
     canonical: "https://www.rspoddar.org/contact",
   },

@@ -2,6 +2,15 @@ import Footer from "@/components/footer"
 import { Heart, Users, Award, Target } from "lucide-react"
 
 export const metadata = {
+  title: "About R. S. Poddar Charitable Trust Jaipur | Since 2020",
+  description:
+    "R. S. Poddar Charitable Trust, Jaipur: serving families since 2020 with free funeral van service & rent-free medical equipment. Meet our trustees.",
+  openGraph: {
+    title: "About R. S. Poddar Charitable Trust Jaipur | Since 2020",
+    description:
+      "R. S. Poddar Charitable Trust, Jaipur: serving families since 2020 with free funeral van service & rent-free medical equipment. Meet our trustees.",
+    url: "https://www.rspoddar.org/about",
+  },
   alternates: {
     canonical: "https://www.rspoddar.org/about",
   },

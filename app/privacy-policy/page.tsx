@@ -6,7 +6,13 @@ import Footer from "@/components/footer";
 export const metadata = {
   title: "Privacy Policy | R. S. Poddar Charitable Trust",
   description:
-    "Privacy Policy for R. S. Poddar Charitable Trust (www.rspoddar.org) — explains how we handle personal information in connection with our charitable services.",
+    "Read the privacy policy of R. S. Poddar Charitable Trust, Jaipur. Learn how we collect, use, and protect your personal information on rspoddar.org.",
+  openGraph: {
+    title: "Privacy Policy | R. S. Poddar Charitable Trust",
+    description:
+      "Read the privacy policy of R. S. Poddar Charitable Trust, Jaipur. Learn how we collect, use, and protect your personal information on rspoddar.org.",
+    url: "https://www.rspoddar.org/privacy-policy",
+  },
   alternates: {
     canonical: "https://www.rspoddar.org/privacy-policy",
   },

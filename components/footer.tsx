@@ -16,7 +16,6 @@ export default function Footer() {
                                 height={80}
                                 sizes="(max-width: 640px) 220px, 300px"
                                 className="h-auto w-[200px] sm:w-[240px] lg:w-[260px] max-w-full"
-                                priority
                             />
                         </div>
                         <p className="text-sm sm:text-base text-gray-300 mb-4">

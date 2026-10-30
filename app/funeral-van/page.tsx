@@ -3,6 +3,16 @@ import FuneralVanSlider from "@/components/funeral-van-slider"
 import { Phone, Clock, MapPin, Heart, Shield } from "lucide-react"
 
 export const metadata = {
+  title: "Free Funeral Van Service Jaipur | Swarg Rath 24/7",
+  description:
+    "Free funeral van & dead body transportation in Jaipur. Swarg Rath shav vahan available 24/7 at no cost, with dignity and care. Call 9251412412 now.",
+  openGraph: {
+    title: "Free Funeral Van Service Jaipur | Swarg Rath 24/7",
+    description:
+      "Free funeral van & dead body transportation in Jaipur. Swarg Rath shav vahan available 24/7 at no cost, with dignity and care. Call 9251412412 now.",
+    url: "https://www.rspoddar.org/funeral-van",
+  },
+ 
   alternates: {
     canonical: "https://www.rspoddar.org/funeral-van",
   },
