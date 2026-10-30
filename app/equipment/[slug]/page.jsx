@@ -615,15 +615,9 @@ const equipmentData = {
   },
 }
 
-interface PageProps {
-  params: Promise<{
-    slug: string
-  }>
-}
-
-export default async function EquipmentDetailPage({ params }: PageProps) {
+export default async function EquipmentDetailPage({ params }) {
   const { slug } = await params
-  const equipment = equipmentData[slug as keyof typeof equipmentData]
+  const equipment = equipmentData[slug]
 
   if (!equipment) {
     notFound()
@@ -825,9 +819,108 @@ export default async function EquipmentDetailPage({ params }: PageProps) {
   )
 }
 
-export async function generateMetadata({ params }: PageProps) {
+// Per-equipment SEO title/description; pages without an entry use the site defaults
+const seoData = {
+  "oxygen-cylinder": {
+    title: "Rent-Free Oxygen Cylinder in Jaipur | RS Poddar Trust",
+    description:
+      "Need an oxygen cylinder on rent in Jaipur? Get a rent-free oxygen cylinder for home use from R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "patient-back-rest": {
+    title: "Rent-Free Patient Back Rest in Jaipur | RS Poddar Trust",
+    description:
+      "Get a rent-free patient back rest in Jaipur for bedridden patients at home. Adjustable backrest for comfort & recovery. Call RS Poddar Trust: 9251412412.",
+  },
+  "suction-machine": {
+    title: "Rent-Free Suction Machine in Jaipur | RS Poddar Trust",
+    description:
+      "Need a suction machine on rent in Jaipur? Get a rent-free medical suction machine for home patient care from R. S. Poddar Charitable Trust. 9251412412.",
+  },
+  "water-bed": {
+    title: "Rent-Free Water Bed for Patients in Jaipur | RS Poddar",
+    description:
+      "Rent-free water bed in Jaipur to prevent bed sores in bedridden patients. Free home care equipment by R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "air-bed": {
+    title: "Rent-Free Air Bed for Bed Sores in Jaipur | RS Poddar",
+    description:
+      "Get a rent-free anti-decubitus air bed in Jaipur for bedridden patients. Helps prevent bed sores at home. R. S. Poddar Charitable Trust: 9251412412.",
+  },
+  wheelchair: {
+    title: "Rent-Free Wheelchair in Jaipur | RS Poddar Trust",
+    description:
+      "Need a wheelchair on rent in Jaipur? Get a rent-free folding wheelchair for patients & the elderly from R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  walker: {
+    title: "Rent-Free Walker in Jaipur | Folding Walker | RS Poddar",
+    description:
+      "Rent-free folding walker (with or without wheels) in Jaipur for elderly & post-surgery patients. Provided by R. S. Poddar Charitable Trust. 9251412412.",
+  },
+  "oxygen-concentrator": {
+    title: "Rent-Free Oxygen Concentrator in Jaipur | RS Poddar Trust",
+    description:
+      "Need an oxygen concentrator on rent in Jaipur? Get a rent-free oxygen concentrator for home use from R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "pulse-oximeter": {
+    title: "Rent-Free Pulse Oximeter in Jaipur | RS Poddar Trust",
+    description:
+      "Get a rent-free pulse oximeter in Jaipur to monitor oxygen level (SpO2) & pulse rate at home. By R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "commode-chair": {
+    title: "Rent-Free Commode Chair in Jaipur | RS Poddar Trust",
+    description:
+      "Rent-free commode chair in Jaipur for elderly, bedridden & post-surgery patients. Safe home care equipment by R. S. Poddar Charitable Trust. 9251412412.",
+  },
+  nebulizer: {
+    title: "Rent-Free Nebulizer Machine in Jaipur | RS Poddar Trust",
+    description:
+      "Need a nebulizer machine on rent in Jaipur? Get a rent-free nebulizer for asthma & breathing care at home from RS Poddar Charitable Trust. 9251412412.",
+  },
+  crutches: {
+    title: "Rent-Free Crutches in Jaipur | RS Poddar Charitable Trust",
+    description:
+      "Get rent-free crutches in Jaipur for fracture, injury & post-surgery recovery. Adjustable crutches by R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "walking-stick": {
+    title: "Rent-Free Walking Stick in Jaipur | RS Poddar Trust",
+    description:
+      "Rent-free walking stick in Jaipur – single leg or four-leg (quad) stick for elderly & patients, by R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "drip-stand": {
+    title: "Rent-Free Drip Stand (IV Stand) in Jaipur | RS Poddar",
+    description:
+      "Get a rent-free drip stand (IV stand) in Jaipur for patient care at home. Free medical equipment by R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "patient-monitor": {
+    title: "Rent-Free Patient Monitor in Jaipur | RS Poddar Trust",
+    description:
+      "Need a patient monitor on rent in Jaipur? Get a rent-free multipara monitor for home ICU care from R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
+  "bipap-machine": {
+    title: "Rent-Free BiPAP Machine in Jaipur | RS Poddar Trust",
+    description:
+      "Need a BiPAP machine on rent in Jaipur? Get a rent-free BiPAP for breathing support & sleep apnea at home from RS Poddar Charitable Trust. 9251412412.",
+  },
+  "hospital-bed": {
+    title: "Rent-Free Hospital Bed in Jaipur | RS Poddar Trust",
+    description:
+      "Need a hospital bed on rent in Jaipur? Get a rent-free hospital bed (manual/fowler) for home patient care from RS Poddar Charitable Trust. 9251412412.",
+  },
+}
+
+export async function generateMetadata({ params }) {
   const { slug } = await params
+  const seo = seoData[slug]
   return {
+    ...(seo && {
+      title: seo.title,
+      description: seo.description,
+      openGraph: {
+        title: seo.title,
+        description: seo.description,
+        url: `https://www.rspoddar.org/equipment/${slug}`,
+      },
+    }),
     alternates: {
       canonical: `https://www.rspoddar.org/equipment/${slug}`,
     },

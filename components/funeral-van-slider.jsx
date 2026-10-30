@@ -9,13 +9,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-interface Slide {
-  src: string;
-  alt: string;
-}
-
 export default function FuneralVanSlider() {
-  const slides: Slide[] = [
+  const slides = [
     { src: "/funeral-van2.jpg", alt: "R.S. Poddar Charitable Trust Funeral Van" },
     { src: "/funeral-van.jpg", alt: "R.S. Poddar Charitable Trust Funeral Van" },
     { src: "/funeral-van3.jpg", alt: "R.S. Poddar Charitable Trust Funeral Van" },

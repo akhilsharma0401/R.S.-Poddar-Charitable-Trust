@@ -18,7 +18,7 @@ export const metadata = {
   },
 };
 
-const PrivacyPage: React.FC = () => {
+const PrivacyPage = () => {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#faf7ff] to-white">
       {/* Hero */}

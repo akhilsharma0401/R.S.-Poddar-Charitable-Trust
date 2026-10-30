@@ -1,10 +1,9 @@
-import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = {
   metadataBase: new URL("https://www.rspoddar.org"),
   title: "Free Funeral Van & Medical Equipment in Jaipur | RS Poddar",
   description:
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
+export const viewport = {
   width: "device-width",
   initialScale: 1,
   // Users must stay able to zoom — never lock maximumScale/userScalable
@@ -29,7 +28,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}) {
   return (
     <html
       lang="en"

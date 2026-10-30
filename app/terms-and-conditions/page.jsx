@@ -18,7 +18,7 @@ export const metadata = {
   },
 };
 
-const TermsPage: React.FC = () => {
+const TermsPage = () => {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#faf7ff] to-white">
       {/* Hero */}
