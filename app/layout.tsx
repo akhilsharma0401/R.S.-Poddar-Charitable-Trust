@@ -1,53 +1,3 @@
-// import type React from "react"
-// import type { Metadata } from "next"
-// import { GeistSans } from "geist/font/sans"
-// import { GeistMono } from "geist/font/mono"
-// import "./globals.css"
-// import Navigation from "@/components/navigation"
-
-// export const metadata: Metadata = {
-//   title: "R.S Poddar Charitable Trust - Serving Humanity with Dignity since 2020",
-//   description:
-//     "Free funeral van service (dead body transportation) and rent-free medical equipment in Jaipur, Rajasthan. 24/7 free funeral service, medical equipment rental, home care equipment. R.S. Poddar Charitable Trust serving families since 2020.",
-//   keywords:
-//     "free funeral van service, dead body transportation, rent-free medical equipment, medical equipment rental, home care equipment, funeral service Jaipur, free funeral service, Swarg Rath, charitable trust Jaipur, R.S. Poddar Charitable Trust",
-//   generator: "v0.app",
-// }
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode
-// }>) {
-//   return (
-//     <html lang="en">
-//       <head>
-//         <style>{`
-// html {
-//   font-family: ${GeistSans.style.fontFamily};
-//   --font-sans: ${GeistSans.variable};
-//   --font-mono: ${GeistMono.variable};
-// }
-//         `}</style>
-//       </head>
-//       <body>
-//         <Navigation />
-//         {children}
-//       </body>
-//     </html>
-//   )
-// }
-
-
-
-
-
-
-
-
-
-
-
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
@@ -55,12 +5,17 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 
 export const metadata: Metadata = {
-  title: "R. S. Poddar Charitable Trust - Serving Humanity with Dignity since 2020",
+  metadataBase: new URL("https://www.rspoddar.org"),
+  title: "Free Funeral Van & Medical Equipment in Jaipur | RS Poddar",
   description:
-    "Free funeral van service (dead body transportation) and rent-free medical equipment in Jaipur, Rajasthan. 24/7 free funeral service, medical equipment rental, home care equipment. R. S. Poddar Charitable Trust serving families since 2020.",
+    "Free funeral van (Swarg Rath) & rent-free medical equipment in Jaipur. 24/7 dead body transportation by R. S. Poddar Charitable Trust. Call 9251412412.",
   keywords:
     "free funeral van service, dead body transportation, rent-free medical equipment, medical equipment rental, home care equipment, funeral service Jaipur, free funeral service, Swarg Rath, charitable trust Jaipur, R. S. Poddar Charitable Trust",
-  generator: "v0.app",
+  openGraph: {
+    title: "Free Funeral Van & Medical Equipment in Jaipur | RS Poddar",
+    description:
+      "Free funeral van (Swarg Rath) & rent-free medical equipment in Jaipur. 24/7 dead body transportation by R. S. Poddar Charitable Trust. Call 9251412412.",
+  },
 };
 
 export const viewport: Viewport = {
@@ -75,7 +30,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={GeistMono.variable /* exposes --font-geist-mono */}>
+    <html
+      lang="en"
+      className={GeistMono.variable /* exposes --font-geist-mono */}
+    >
       <body className={`${GeistSans.className} antialiased overflow-x-hidden`}>
         <Navigation />
         <main className="w-full">{children}</main>

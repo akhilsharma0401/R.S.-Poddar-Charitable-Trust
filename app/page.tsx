@@ -2,8 +2,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Heart, Phone, Mail, MapPin, Truck, Stethoscope, ArrowRight, Clock, CheckCircle } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import Footer from "@/components/footer"
+
+export const metadata = {
+  alternates: {
+    canonical: "https://www.rspoddar.org",
+  },
+}
 
 export default function Home() {
   const medicalEquipment = [
@@ -66,45 +71,6 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      {/* <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
-            Serving Humanity with Dignity, Compassion & Care
-            Jaipur
-          </h2>
-          <div className="text-lg text-gray-700 leading-relaxed space-y-6 px-4">
-         
-            <p className="text-xl font-semibold text-[#db4637] text-center mb-8">
-              Dead Body Transportation & Medical Equipment Rent Free in Jaipur, Rajasthan
-            </p>
-
-            
-            <p className="text-justify">
-              Since 2020, R. S. Poddar Charitable Trust has been helping families in Jaipur by offering{" "}
-              <strong>Free Funeral Van Service in Jaipur</strong>, reliable <strong>Dead Body Transportation (Swarg Rath)</strong>{" "}
-              Services and clean, safe, <strong>Rent-Free Medical Equipment in Jaipur, for Home Care.</strong>
-            </p>
-
-            <p className="text-justify">
-              We provide essential <strong>Medical Equipment </strong> items like comfortable hospital beds,
-              portable oxygen cylinders, easy-to-use wheelchairs, strong walkers, and more — all at{" "}
-              <strong>Rent Free</strong>. Our <strong>Funeral Service</strong> and{" "}
-              <strong>Medical Equipment on Rent</strong> program aims to support people during difficult times by easing
-              both emotional stress and financial pressure. We are here to stand beside every family with respect,
-              comfort, and meaningful support when it matters most.
-            </p>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link href="/about">
-              <Button className="bg-gradient-to-r from-[#453066] to-[#3f4787] text-white hover:opacity-90">
-                Read Our Full Story
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section> */}
 
       <section className="relative isolate overflow-hidden bg-gray-50 py-14 sm:py-16 lg:py-20">
         {/* Soft background */}
@@ -187,9 +153,6 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900 text-balance">
               Funeral Van Service & Medical Equipment in Jaipur
             </h2>
-            {/* <p className="text-xl font-semibold text-[#db4637]">
-              Dead Body Transportation & Medical Equipment Rental Services
-            </p> */}
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
@@ -211,15 +174,6 @@ export default function Home() {
                   <strong>Dead Body Transportation Services (Swarg Rath)</strong> across Jaipur at no charge. Our{" "}
                   service van is available 24x7 to support grieving families with dignity and respect.
                 </p>
-                {/* <div className="mb-6">
-                  <Image
-                    src="/funeral-van.png"
-                    alt="Funeral van service"
-                    width={400}
-                    height={200}
-                    className="w-full h-48 object-cover rounded-lg"
-                  />
-                </div> */}
                 <div className="space-y-4 items-center gap-4 mb-4">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <Clock className="w-4 h-4" />
@@ -272,7 +226,6 @@ export default function Home() {
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
                   <strong>
-                    {/* + {medicalEquipment.length - 8}  */}
                     more medical equipment items available</strong>
                 </p>
                 <Link href="/medical-equipment" className="block">
@@ -410,67 +363,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="py-16 px-5 bg-gray-50">
-        <div className="">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Our Leadership</h2>
-          <div className="grid md:grid-cols-6 gap-5">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-xl sm:text-2xl font-bold">KA</span>
-                </div>
-                <CardTitle className="text-lg sm:text-xl">Kailash Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-xl sm:text-2xl font-bold">SA</span>
-                </div>
-                <CardTitle className="text-lg sm:text-xl">Suresh Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-xl sm:text-2xl font-bold">NA</span>
-                </div>
-                <CardTitle className="text-lg sm:text-xl">Naveen Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader className="px-8">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-xl sm:text-2xl font-bold">AA</span>
-                </div>
-                <CardTitle className="text-lg sm:text-xl">Aman Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-xl sm:text-2xl font-bold">SA</span>
-                </div>
-                <CardTitle className="text-lg sm:text-xl">Shubham Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-xl sm:text-2xl font-bold">SA</span>
-                </div>
-                <CardTitle className="text-lg sm:text-xl">Saurabh Agarwal</CardTitle>
-                <CardDescription className="text-[#db4637] font-medium">Managing Trustee</CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section> */}
 
       {/* CTA Section */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#db4637] text-white">
@@ -513,7 +405,6 @@ export default function Home() {
                 <MapPin className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Address</h3>
-              {/* <p className="text-gray-600 text-justify">22, Ground Floor, Biswa Nagar, New Sanganer Road, Opp. Metro Pillar No. 75, Jaipur, Rajasthan, India – 302019</p> */}
               <a href="https://shorturl.at/hMhWf" className="text-gray-600">Google Link</a>
             </div>
             <div className="flex flex-col items-center">

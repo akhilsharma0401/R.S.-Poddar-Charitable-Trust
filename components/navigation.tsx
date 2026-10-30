@@ -3,12 +3,10 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X, Phone, Mail } from "lucide-react"
-import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [openServices, setOpenServices] = useState(false);
 
   return (
     <>
@@ -50,15 +48,6 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center gap-3 h-16 sm:h-18 md:h-20">
             {/* Logo */}
-            {/* <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-[#453066] to-[#3f4787] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RS</span>
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">R.S. Poddar Charitable Trust</h1>
-                <p className="text-sm text-gray-600">Free Funeral & Medical Services</p>
-              </div>
-            </Link> */}
             <Link
               href="/"
               aria-label="R.S. Poddar Charitable Trust — Home"
@@ -89,30 +78,6 @@ export default function Navigation() {
               <Link href="/medical-equipment" className="whitespace-nowrap text-sm xl:text-base text-gray-700 font-bold hover:text-[#db4637] transition-colors">
                 Medical Equipment
               </Link>
-              {/* <div className="relative group">
-                <button className="text-gray-700 hover:text-[#db4637] font-bold transition-colors flex items-center">
-                  Rent-free Services
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="py-2">
-                    <Link
-                      href="/services/funeral-van"
-                      className="block px-4 py-2 text-gray-700 font-bold hover:bg-gray-50 hover:text-[#db4637]"
-                    >
-                      Funeral Van Service
-                    </Link>
-                    <Link
-                      href="/services/medical-equipment"
-                      className="block px-4 py-2 text-gray-700 font-bold hover:bg-gray-50 hover:text-[#db4637]"
-                    >
-                      Medical Equipment
-                    </Link>
-                  </div>
-                </div>
-              </div> */}
               <Link href="/contact" className="whitespace-nowrap text-sm xl:text-base text-gray-700 font-bold hover:text-[#db4637] transition-colors">
                 Contact
               </Link>
@@ -176,36 +141,8 @@ export default function Navigation() {
                 </Link>
 
                 {/* Dropdown Button */}
-                {/* <button
-                  onClick={() => setOpenServices(!openServices)}
-                  className="flex items-center gap-2 text-gray-700 hover:text-[#db4637] transition-colors"
-                >
-                  <span>Rent-free Services</span>
-                  <ChevronDown
-                    className={`w-4 h-4 transform transition-transform duration-200 ${openServices ? "rotate-180" : ""
-                      }`}
-                  />
-                </button> */}
 
                 {/* Dropdown Links */}
-                {/* {openServices && (
-                  <div className="flex flex-col space-y-2 pl-4">
-                    <Link
-                      href="/services/funeral-van"
-                      className="block rounded-md px-2 py-3 font-medium text-gray-700 hover:bg-gray-50 hover:text-[#db4637] transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Funeral Van Service
-                    </Link>
-                    <Link
-                      href="/services/medical-equipment"
-                      className="block rounded-md px-2 py-3 font-medium text-gray-700 hover:bg-gray-50 hover:text-[#db4637] transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Medical Equipment
-                    </Link>
-                  </div>
-                )} */}
 
                 <Link
                   href="/contact"

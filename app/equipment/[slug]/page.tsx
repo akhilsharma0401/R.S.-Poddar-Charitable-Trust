@@ -1,6 +1,5 @@
 import Footer from "@/components/footer"
 import { ArrowLeft, CheckCircle, Phone, Heart, Clock, AlertCircle } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
@@ -617,13 +616,14 @@ const equipmentData = {
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default function EquipmentDetailPage({ params }: PageProps) {
-  const equipment = equipmentData[params.slug as keyof typeof equipmentData]
+export default async function EquipmentDetailPage({ params }: PageProps) {
+  const { slug } = await params
+  const equipment = equipmentData[slug as keyof typeof equipmentData]
 
   if (!equipment) {
     notFound()
@@ -772,10 +772,6 @@ export default function EquipmentDetailPage({ params }: PageProps) {
                   <CheckCircle className="w-5 h-5 text-green-500" />
                   <span className="text-sm sm:text-base text-gray-700">Currently Available</span>
                 </div>
-                {/* <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-blue-500" />
-                  <span className="text-gray-700">Same-day delivery in Jaipur</span>
-                </div> */}
                 <div className="flex items-center gap-2">
                   <Heart className="w-5 h-5 text-red-500" />
                   <span className="text-sm sm:text-base text-gray-700">No rental charges</span>

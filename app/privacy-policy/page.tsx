@@ -1,8 +1,6 @@
 // app/privacy/page.tsx
 import React from "react";
-import Link from "next/link";
-import { Shield, FileText, AlertTriangle, ArrowRight, Heart } from "lucide-react";
-import Image from "next/image";
+import { Shield, FileText } from "lucide-react";
 import Footer from "@/components/footer";
 
 export const metadata = {
@@ -32,31 +30,10 @@ const PrivacyPage: React.FC = () => {
                   handle personal information in connection with our charitable activities.
                 </p>
                 {/* <p className="mt-1 text-sm text-gray-500">Last Updated: 04 September 2025</p> */}
-                {/* <div className="mt-4 flex flex-wrap gap-3">
-                  <a
-                    href="#info-collect"
-                    className="inline-flex items-center gap-2 rounded-xl bg-[#453066] px-4 py-2 text-white hover:opacity-95"
-                  >
-                    Start Reading <ArrowRight className="h-4 w-4" />
-                  </a>
-                  <Link
-                    href="/"
-                    className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-[#453066] hover:bg-gray-50"
-                  >
-                    Back to Home
-                  </Link>
-                </div> */}
               </div>
             </div>
 
             {/* Callout */}
-            {/* <div className="mt-6 flex items-start gap-3 rounded-2xl border bg-gray-50 p-4">
-              <AlertTriangle className="h-5 w-5 text-amber-500 mt-0.5" />
-              <p className="text-sm text-gray-700">
-                Please review this Privacy Policy carefully. It describes the limited data we
-                collect and how it is used solely for service delivery.
-              </p>
-            </div> */}
           </div>
         </div>
       </section>

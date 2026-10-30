@@ -1,8 +1,6 @@
 import Footer from "@/components/footer"
 import FuneralVanSlider from "@/components/funeral-van-slider"
 import { Phone, Clock, MapPin, Heart, Shield } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
 
 export default function FuneralVanService() {
   return (
@@ -51,15 +49,6 @@ export default function FuneralVanService() {
           <div className="relative w-full min-w-0">
             <FuneralVanSlider />
           </div>
-          {/* <div className="relative">
-            <Image
-              src="/funeral-van.jpg"
-              alt="R.S. Poddar Charitable Trust Funeral Van"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
-          </div> */}
         </div>
 
         {/* Features */}
