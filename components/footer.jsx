@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CurrentYear from "@/components/current-year";
 
 export default function Footer() {
     return (
@@ -82,7 +83,7 @@ export default function Footer() {
 
                 <div className="text-center">
                     <p className="text-gray-400 text-xs sm:text-sm">
-                        Copyright © 2025 R. S. Poddar Charitable Trust. All Rights Reserved.
+                        Copyright © <CurrentYear initialYear={new Date().getFullYear()} /> R. S. Poddar Charitable Trust. All Rights Reserved.
                         {" | "}
                         <Link
                             href="/privacy-policy"
