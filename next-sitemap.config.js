@@ -7,7 +7,7 @@ module.exports = {
   sitemapSize: 7000,
   changefreq: "daily",
   priority: 0.7,
-  exclude: ["/privacy-policy", "/terms-and-conditions"],
+  exclude: ["/privacy-policy", "/terms-and-conditions", "/icon.png", "/apple-icon.png"],
   robotsTxtOptions: {
     policies: [
       {
